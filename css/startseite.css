@@ -1,4 +1,46 @@
+body{
+    display: grid;
+    grid-template-columns: 40px repeat(12, 1fr) 40px;
+    grid-template-rows: repeat(15, 100px);
+}
+
+button{
+    grid-column: 4/ span 8;
+    grid-row: 1/ span 3;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
 h2 {
 
+    text-align: center;
     font-size: 70px;
+}
+
+main {
+
+    
+    grid-column: 3/ span 10;
+    grid-row: 4/ span 6;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+
+#event1 {
+    grid-area: 3 / 1 / 2 / 1;
+}
+
+#event2 {
+    grid-area: 3 / 2 / 2 / 2;
+}
+
+#event3 {
+    grid-area: 3 / 3 / 2 / 3;
 }
