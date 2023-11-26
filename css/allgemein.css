@@ -1,0 +1,73 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
+    }
+
+    header {
+        grid-column: 1 / span 12;
+        grid-row: 1 /span 1;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+    }
+    
+    .logo img {
+        height: 50px; 
+    }
+    
+    .icons img {
+        height: 20px; 
+        margin-left: 10px;
+    }
+
+
+    footer {
+        grid-column: 1 / span 12;
+        grid-row: 12 / span 1;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgba(187, 187, 187, 0.468);
+        color: black;
+        padding: 20px;
+    }
+    
+    .titelAdresse {
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    p {
+        white-space: pre-line; /* Treats line breaks in text as actual breaks */
+        font-family: Arial, sans-serif; /* You can change the font family */
+        padding: 10px;
+        max-width: 300px; /* Adjust the width as needed */
+        line-height: 1.5; /* Adjust line spacing */
+    }
+
+    .footer-left, .footer-right {
+        font-family: Arial, sans-serif;
+        display: flex;
+        align-items: center;
+    }
+    
+    .footer-left p {
+        margin: 0;
+        margin-right: 20px; /* Spacing between address and icons */
+    }
+    
+    .social-icon {
+        height: 30px;
+        margin-right: 10px;
+    }
+    
+    .footer-right a {
+        margin-left: 10px;
+        color: black;
+        text-decoration: none;
+        /* Add more styling as needed */
+    }
