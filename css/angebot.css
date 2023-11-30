@@ -1,4 +1,4 @@
-body{
+body {
     display: grid;
     grid-template-columns: 40px repeat(12, 1fr) 40px;
     grid-template-rows: 600px 1fr;
@@ -25,7 +25,7 @@ h1 {
 .bars h3 {
     margin: 0px;
     font-family: 'Courier New', Courier, monospace;
-   
+
 }
 
 .grid-date {
@@ -39,7 +39,7 @@ h1 {
     transform: rotate(180deg);
     font-family: 'Courier New', Courier, monospace;
     font-size: 28px;
-   
+
 }
 
 
@@ -498,8 +498,7 @@ h1 {
 .product27 img,
 .product28 img,
 .product29 img,
-.product30 img
- {
+.product30 img {
     max-width: 100%;
     height: auto;
     margin-bottom: 0px;
@@ -529,7 +528,7 @@ h1 {
     font-size: 15px;
 }
 
-
+.popup2,
 .popup1 {
     position: fixed;
     top: 50%;
@@ -541,9 +540,9 @@ h1 {
     width: auto;
     z-index: 9999;
     display: none;
-  }
-  
-  .exit-button {
+}
+
+.exit-button {
     position: absolute;
     top: 10px;
     right: 10px;
@@ -553,27 +552,30 @@ h1 {
     color: #fff;
     border: none;
     border-radius: 3px;
-  }
+}
 
-  a
-  {color:white; text-decoration: none; }
+a {
+    color: white;
+    text-decoration: none;
+}
 
-  a:hover {
+a:hover {
     color: #b0b0b0;
-  }
+}
 
-  #popup:target {
+#popup2:target,
+#popup1:target {
     display: block;
-  }
+}
 
-  .abinusgang{
+.abinusgang {
     border: black solid 1px;
     background-color: white;
     padding: 5px;
     font-size: 20px;
-  }
+}
 
-  .abinusgang:hover{
+.abinusgang:hover {
     background-color: black;
     color: white;
-  }
+}
