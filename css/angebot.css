@@ -63,3 +63,26 @@ h1 {
     margin-bottom: 0px;
     margin-top: 50px
 }
+
+.ortschaft {
+    font-weight: lighter;
+    font-size: 25px;
+}
+
+.eventtitel {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.musicstyle {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.preis {
+    font-size: 18px;
+}
+
+.alter {
+    font-size: 15px;
+}
