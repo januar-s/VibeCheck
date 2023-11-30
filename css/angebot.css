@@ -534,12 +534,13 @@ h1 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #fff;
+    background-color: #1f1f1f;
     padding: 10px;
     border: 2px solid #000;
     width: auto;
     z-index: 9999;
     display: none;
+    color: white;
 }
 
 .exit-button {
@@ -567,6 +568,7 @@ a:hover {
 #popup1:target {
     display: block;
 }
+
 
 .abinusgang {
     border: black solid 1px;
