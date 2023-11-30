@@ -1,4 +1,65 @@
 body{
     display: grid;
     grid-template-columns: 40px repeat(12, 1fr) 40px;
+    grid-template-rows: 600px 1fr;
+}
+
+h1 {
+    grid-column: 4 / span 8;
+    grid-row: 1 / span 1;
+    justify-self: center;
+    align-self: center;
+    font-size: 145px;
+}
+
+.bars {
+    grid-column: 2 / span 12;
+    grid-row: 200px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+}
+
+.bars p,
+.bars h2,
+.bars h3 {
+    margin: 0px;
+    font-family: 'Courier New', Courier, monospace;
+   
+}
+
+.grid-date {
+    display: flex;
+    height: 305px;
+    justify-content: flex-start;
+    align-items: flex-end;
+    margin-right: 0px;
+
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 28px;
+   
+}
+
+.date1 {
+    grid-column: 1/ span 1;
+    grid-row: 1 / span 1;
+    font-weight: lighter;
+    margin: 0px;
+}
+
+.product1 {
+    grid-column: 2 / span 3;
+    grid-row: 1 / span 1;
+    text-align: right;
+    position: relative;
+
+}
+
+.product1 img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 0px;
+    margin-top: 50px
 }
