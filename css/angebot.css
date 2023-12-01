@@ -570,6 +570,7 @@ a:hover {
     color: #b0b0b0;
 }
 
+#popup4:target,
 #popup3:target,
 #popup2:target,
 #popup1:target {
