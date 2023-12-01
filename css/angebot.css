@@ -16,7 +16,7 @@ h1 {
     grid-column: 2 / span 12;
     grid-row: 200px;
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: 60px repeat(11, 1fr);
     grid-template-rows: repeat(10, 1fr);
 }
 
@@ -528,6 +528,11 @@ h1 {
     font-size: 15px;
 }
 
+
+
+
+.popup4,
+.popup3,
 .popup2,
 .popup1 {
     position: fixed;
@@ -553,6 +558,7 @@ h1 {
     color: #fff;
     border: none;
     border-radius: 3px;
+    font-size: 20px;
 }
 
 a {
@@ -564,6 +570,7 @@ a:hover {
     color: #b0b0b0;
 }
 
+#popup3:target,
 #popup2:target,
 #popup1:target {
     display: block;
