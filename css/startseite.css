@@ -4,7 +4,13 @@ body{
     grid-template-rows: repeat(15, 100px);
 }
 
-button{
+h2 {
+
+    text-align: center;
+    font-size: 70px;
+}
+
+button {
     grid-column: 4/ span 8;
     grid-row: 1/ span 3;
     background-color: #4CAF50;
@@ -17,30 +23,33 @@ button{
     cursor: pointer;
 }
 
-h2 {
-
-    text-align: center;
-    font-size: 70px;
+p {
+    text-align: left;
+    font-size: 20px;
 }
 
-main {
+#TitelEvents {
+    grid-area: 4 / 4 / span 2 /span 8 ;
+    text-align: center;
+    font-size: 50px;
+}
 
-    
-    grid-column: 3/ span 10;
-    grid-row: 4/ span 6;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+.events {
+    margin: 10px;
+}
+
+.eventpictures {
+    width: 100%;
 }
 
 #event1 {
-    grid-area: 3 / 1 / 2 / 1;
+    grid-area: 6 / 2 / 9 / 6;
 }
 
 #event2 {
-    grid-area: 3 / 2 / 2 / 2;
+    grid-area: 6 / 6 / 9 / 10;
 }
 
 #event3 {
-    grid-area: 3 / 3 / 2 / 3;
+    grid-area: 6 / 10 / 9 / 14;
 }
