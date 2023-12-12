@@ -48,7 +48,6 @@ body {
         white-space: pre-line; /* Treats line breaks in text as actual breaks */
         font-family: Arial, sans-serif; /* You can change the font family */
         padding: 10px;
-        max-width: 300px; /* Adjust the width as needed */
         line-height: 1.5; /* Adjust line spacing */
     }
 

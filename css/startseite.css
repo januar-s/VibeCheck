@@ -1,24 +1,23 @@
 body{
     display: grid;
     grid-template-columns: 40px repeat(12, 1fr) 40px;
-    grid-template-rows: repeat(15, 100px);
+    grid-template-rows: repeat(25, 100px);
 }
 
 h2 {
 
     text-align: center;
-    font-size: 70px;
+    font-size: 60px;
+    margin: 15px;
+    margin-top: 0px;
 }
 
 button {
-    grid-column: 4/ span 8;
-    grid-row: 1/ span 3;
     background-color: #4CAF50;
     border: none;
     color: white;
     text-align: center;
     text-decoration: none;
-    font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
 }
@@ -26,30 +25,97 @@ button {
 p {
     text-align: left;
     font-size: 20px;
+    margin-top: 0px;
+    margin-left: 0px;
+    padding-top: 0px;
+    padding-left: 0px;
 }
 
-#TitelEvents {
-    grid-area: 4 / 4 / span 2 /span 8 ;
+#buttontop {
+    grid-column: 4/ span 8;
+    grid-row: 1/ span 3;
     text-align: center;
     font-size: 50px;
 }
 
-.events {
-    margin: 10px;
-}
+/* Events */
+    #TitelEvents {
+        grid-area: 5 / 2 / span 1 /span 12 ;
+        text-align: center;
+        font-size: 50px;
+    }
 
-.eventpictures {
-    width: 100%;
-}
+    .events {
+        margin: 10px;
+    }
 
-#event1 {
-    grid-area: 6 / 2 / 9 / 6;
-}
+    .eventpictures {
+        width: 100%;
+    }
 
-#event2 {
-    grid-area: 6 / 6 / 9 / 10;
-}
+    #event1 {
+        grid-area: 6 / 2 / 11 / 6;
+    }
 
-#event3 {
-    grid-area: 6 / 10 / 9 / 14;
-}
+    #event2 {
+        grid-area: 6 / 6 / 11 / 10;
+    }
+
+    #event3 {
+        grid-area: 6 / 10 / 11 / 14;
+    }
+
+
+/* Podcast */
+    #TitelUsgangsgschichte {
+        grid-area: 11 / 8 / span 1 / span 6 ;
+        text-align: center;
+        font-size: 50px;
+    }
+
+    .usgangsgschichtepictures {
+        height: 100%;
+    }
+
+    #UsgangsgschichtePictures {
+        grid-area: 11 / 2 / span 4 / span 5;
+        align-content: center;
+        overflow: hidden;
+    }
+
+    #TextUsgangsgschichte {
+        grid-area: 12 / 8 / span 2 / span 6;
+        text-align: left;
+        font-size: 20px;
+        width: 100%;
+    }
+
+    #buttonpodcast {
+        grid-area: 14 / 9 / span 1 / span 4;
+        text-align: center;
+    }
+
+/* Team */
+    #TitelTeam {
+        grid-area: 16 / 2 / span 1 / span 12 ;
+        text-align: left;
+        font-size: 100px;
+        color: white;
+    }
+
+    .teampictures {
+        width: 100%;
+    }
+
+    #TeamPictures {
+        grid-area: 16 / 4 / span 5 / span 8;
+        align-content: center;
+        overflow: hidden;
+    }
+
+    #TextTeam {
+        grid-area: 21 / 4 / span 2 / span 8;
+        text-align: left;
+        font-size: 20px;
+        width: 100%;
+    }
