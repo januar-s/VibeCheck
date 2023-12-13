@@ -2,7 +2,15 @@
     --color-background-white: #ffffff;
 }
 
-body{
+body,
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+body {
+    min-width: fit-content;
     width: 100%;
     display: grid;
     grid-template-columns: 40px repeat(12, 1fr) 40px;
@@ -11,11 +19,21 @@ body{
 }
 
 h2 {
-
-    text-align: center;
     font-size: 60px;
-    margin: 15px;
-    margin-top: 0px;
+    margin: 0px;
+}
+
+h3 {
+    font-size: 30px;
+    margin: 0%;
+}
+
+p {
+    font-size: 18px;
+    margin-top: 15px;
+    margin-left: 0px;
+    padding-top: 0px;
+    padding-left: 0px;
 }
 
 button {
@@ -24,16 +42,7 @@ button {
     color: white;
     text-align: center;
     text-decoration: none;
-    margin: 4px 2px;
     cursor: pointer;
-}
-
-p {
-    font-size: 20px;
-    margin-top: 0px;
-    margin-left: 0px;
-    padding-top: 0px;
-    padding-left: 0px;
 }
 
 #buttontop {
@@ -44,91 +53,97 @@ p {
 }
 
 /* Events */
-    #TitelEvents {
-        grid-area: 5 / 2 / span 1 /span 12 ;
-        text-align: center;
-        font-size: 50px;
-    }
+#TitelEvents {
+    display: flex;
+    grid-area: 5 / 2 / span 1 /span 12;
+    font-size: 50px;
+    align-items: flex-end;
+    justify-content: center;
+}
 
-    .events {
-        margin: 10px;
-    }
+.events {
+    margin: 10px;
+}
 
-    .eventpictures {
-        width: 100%;
-        object-fit: cover;
-    }
+.eventpictures {
+    width: 100%;
+    object-fit: cover;
+}
 
-    #event1 {
-        grid-area: 6 / 2 / 11 / 6;
-    }
+#event1 {
+    grid-area: 6 / 2 / 11 / 6;
+}
 
-    #event2 {
-        grid-area: 6 / 6 / 11 / 10;
-    }
+#event2 {
+    grid-area: 6 / 6 / 11 / 10;
+}
 
-    #event3 {
-        grid-area: 6 / 10 / 11 / 14;
-    }
+#event3 {
+    grid-area: 6 / 10 / 11 / 14;
+}
 
 
 /* Podcast */
-    #TitelPodcast {
-        grid-area: 11 / 8 / span 1 / span 6 ;
-        text-align: center;
-        font-size: 50px;
-    }
+#TitelPodcast {
+    grid-area: 11 / 8 / span 1 / span 6;
+    text-align: left;
+    font-size: 50px;
+}
 
-    .podcastpictures {
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-    }
+.podcastpictures {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
 
-    #PodcastPictures {
-        grid-area: 11 / 2 / span 4 / span 5;
-        align-content: center;
-        overflow: hidden;
-    }
+#PodcastPictures {
+    grid-area: 11 / 2 / span 4 / span 5;
+    align-content: center;
+    overflow: hidden;
+}
 
-    #TextPodcast {
-        grid-area: 12 / 8 / span 2 / span 6;
-        text-align: left;
-        font-size: 20px;
-        width: 100%;
-    }
+#TextPodcast {
+    grid-area: 12 / 8 / span 2 / span 6;
+    text-align: left;
+    font-size: 20px;
+    width: 100%;
 
-    #buttonpodcast {
-        grid-area: 14 / 9 / span 1 / span 4;
-        text-align: center;
+    p {
+        margin: 0px;
     }
+}
+
+#buttonpodcast {
+    grid-area: 14 / 9 / span 1 / span 4;
+    text-align: center;
+}
 
 /* Team */
-    #TitelTeam {
-        grid-area: 16 / 2 / span 1 / span 12 ;
-        text-align: left;
-        font-size: 100px;
-        color: white;
-    }
+#TitelTeam {
+    grid-area: 16 / 2 / span 1 / span 12;
+    text-align: center;
+    font-size: 100px;
+    color: white;
+}
 
-    .teampictures {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;       
-    }
+.teampictures {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
-    #TeamPictures {
-        grid-area: 16 / 4 / span 5 / span 8;
-        align-content: center;
-        overflow: hidden;
-    }
+#TeamPictures {
+    grid-area: 16 / 4 / span 5 / span 8;
+    align-content: center;
+    overflow: hidden;
+}
 
-    #TextTeam {
-        grid-area: 21 / 5 / span 2 / span 6;
-        text-align: left;
-        font-size: 20px;
-        width: 100%;
-    }
+#TextTeam {
+    grid-area: 21 / 5 / span 2 / span 6;
+    text-align: left;
+    font-size: 20px;
+    width: 100%;
+}
 
 
 
@@ -136,6 +151,7 @@ p {
 @media screen and (max-width: 1000px) {
     p {
         font-size: 16px;
+        padding: 0px;
     }
 
     #buttontop {
@@ -146,158 +162,186 @@ p {
     }
 
     /* Events */
-        #event1 {
-            grid-area: 6 / 2 / span 3 / span 4;
+    .events {
+        p {
+            margin-top: 10px;
         }
+    }
 
-        #event2 {
-            grid-area: 6 / 6 / span 3 / span 4;
-        }
+    #event1 {
+        grid-area: 6 / 2 / span 3 / span 4;
+    }
 
-        #event3 {
-            grid-area: 6 / 10 / span 3 / span 4;
-        }
+    #event2 {
+        grid-area: 6 / 6 / span 3 / span 4;
+    }
+
+    #event3 {
+        grid-area: 6 / 10 / span 3 / span 4;
+    }
 
     /* Podcast */
-        #TitelPodcast {
-            grid-area: 9 / 2 / span 1 / span 12 ;
-            text-align: center;
-            font-size: 50px;
-        }
+    #TitelPodcast {
+        grid-area: 9 / 2 / span 1 / span 12;
+        font-size: 50px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+    }
 
-        .podcastpictures {
-            width: 100%;
-            height: auto;
+    .podcastpictures {
+        width: 100%;
+        height: auto;
 
-        }
+    }
 
-        #PodcastPictures {
-            grid-area: 10 / 2 / span 3 / span 12;
-            overflow: hidden;
-        }
+    #PodcastPictures {
+        grid-area: 10 / 2 / span 3 / span 12;
+        overflow: hidden;
+    }
 
-        #TextPodcast {
-            grid-area: 13 / 2 / span 2 / span 7;
-            text-align: left;
-            font-size: 20px;
-            width: 100%;
-        }
+    #TextPodcast {
+        grid-area: 13 / 2 / span 2 / span 7;
+        font-size: 20px;
+        width: 100%;
+        display: flex;
+        align-items: flex-end;
+    }
 
-        #buttonpodcast {
-            grid-area: 14 / 9 / span 1 / span 5;
-            text-align: center;
-        }
+    #buttonpodcast {
+        grid-area: 14 / 9 / span 1 / span 5;
+        text-align: center;
+    }
 
     /* Team */
-        #TeamPictures {
-            grid-area: 16 / 2 / span 3 / span 12;
-            align-content: center;
-            overflow: hidden;
-        }
+    #TeamPictures {
+        grid-area: 16 / 2 / span 3 / span 12;
+        align-content: center;
+        overflow: hidden;
+    }
 
-        #TextTeam {
-            grid-area: 19 / 4 / span 2 / span 8;
-            text-align: left;
-            font-size: 20px;
-            width: 100%;
-        }
+    #TextTeam {
+        grid-area: 19 / 4 / span 2 / span 8;
+        text-align: left;
+        font-size: 20px;
+        width: 100%;
+    }
 }
 
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 657px) {
+    body {
+        grid-template-columns: 15px repeat(12, 1fr) 15px;
+        grid-template-rows: repeat(30, 100px);
+    }
+
+    p {
+        font-size: 14px;
+    }
+
     h2 {
-        padding-left: 0px;
-        margin-left: 0px;
+        font-size: 35px;
+        padding: 0px;
+        margin: 0px;
     }
 
     h3 {
+        font-size: 25px;
         margin: 0%;
     }
 
     /* Events */
-        #TitelEvents {
-            grid-area: 5 / 2 / span 1 /span 12 ;
-            text-align: center;
-            font-size: 50px;
+    #TitelEvents {
+        grid-area: 5 / 2 / span 1 /span 12;
+        font-size: 50px;
+    }
+
+    .events {
+        margin: 10px;
+        margin-top: 0px;
+        p {
+            margin-top: 5px;
         }
 
-        .events {
-            margin: 10px;
-        }
+    }
 
-        .eventpictures {
-            width: 100%;
-        }
+    .eventpictures {
+        height: 50%;
+        object-fit: cover;
+    }
 
-        #event1 {
-            grid-area: 6 / 4 / span 3 / span 8;
-        }
+    #event1 {
+        grid-area: 6 / 2 / span 4 / span 12;
+    }
 
-        #event2 {
-            grid-area: 9 / 4 / span 3 / span 8;
-        }
+    #event2 {
+        grid-area: 10 / 2 / span 4 / span 12;
+    }
 
-        #event3 {
-            grid-area: 12 / 4 / span 3 / span 8;
-        }
+    #event3 {
+        grid-area: 14 / 2 / span 4 / span 12;
+    }
 
 
     /* Podcast */
-        #TitelPodcast {
-            grid-area: 16 / 3 / span 1 / span 10;
-            text-align: left;
-            font-size: 50px;
-        }
+    #TitelPodcast {
+        grid-area: 18 / 1 / span 1 / span 14;
+        text-align: center;
+        font-size: 50px;
+        color: white;
+        display: block;
+    }
 
-        .podcastpictures {
-            height: 100%;
-            width: 100%;
-            object-fit: cover;
-        }
+    .podcastpictures {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
 
-        #PodcastPictures {
-            grid-area: 13 / 2 / span 3 / span 12;
-            align-content: center;
-            overflow: hidden;
-        }
+    #PodcastPictures {
+        grid-area: 18 / 1 / span 3 / span 14;
+        align-content: center;
+        overflow: hidden;
+    }
 
-        #TextPodcast {
-            grid-area: 17 / 3 / span 2 / span 10;
-            text-align: left;
-            font-size: 20px;
-            width: 100%;
-        }
+    #TextPodcast {
+        grid-area: 21 / 3 / span 2 / span 10;
+        text-align: left;
+        font-size: 20px;
+        width: 100%;
+        display: block;
+    }
 
-        #buttonpodcast {
-            grid-area: 19 / 5 / span 1 / span 6;
-            text-align: center;
-        }
+    #buttonpodcast {
+        grid-area: 23 / 4 / span 1 / span 8;
+        text-align: center;
+    }
 
     /* Team */
-        #TitelTeam {
-            grid-area: 21 / 2 / span 1 / span 12 ;
-            text-align: left;
-            font-size: 100px;
-            color: white;
-        }
+    #TitelTeam {
+        grid-area: 25 / 2 / span 1 / span 12;
+        text-align: center;
+        font-size: 100px;
+        color: white;
+    }
 
-        .teampictures {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;       
-        }
+    .teampictures {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
 
-        #TeamPictures {
-            grid-area: 21 / 2 / span 3 / span 12;
-            align-content: center;
-            overflow: hidden;
-        }
+    #TeamPictures {
+        grid-area: 25 / 1 / span 3 / span 14;
+        align-content: center;
+        overflow: hidden;
+    }
 
-        #TextTeam {
-            grid-area: 24 / 3 / span 2 / span 10;
-            text-align: left;
-            font-size: 20px;
-            width: 100%;
-        }
+    #TextTeam {
+        grid-area: 28 / 3 / span 2 / span 10;
+        text-align: left;
+        font-size: 20px;
+        width: 100%;
+    }
 
 }
