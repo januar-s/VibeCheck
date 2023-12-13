@@ -1,13 +1,11 @@
 body {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-    column-gap: 10px;
-    row-gap: 10px;
+    grid-template-columns: 40px repeat(12, 1fr) 40px;
+    grid-template-rows: repeat(15, 100px)
     }
 
 .grid-item {
-        grid-column: 1 / span 12;
+        grid-column: 1 / span 14;
         grid-row: 1 /span 1;
         display: block;
         justify-content: space-between;
@@ -18,19 +16,21 @@ body {
     .logo{
         display: flex;
         justify-content: flex-start;
-        height: 70px; 
+        height: 110px;
+        margin: 10px;
     }
     
     .icons{
         display: flex;
         justify-content: flex-end;
-        height: 30px; 
+        height: 35px;
+        gap: 20px;
     }
 
 
     footer {
-        grid-column: 1 / span 12;
-        grid-row: 12 / span 1;
+        grid-column: 1 / span 14;
+        grid-row: 15 / span 1;
         display: flex;
         justify-content: space-between;
         align-items: center;
