@@ -1,7 +1,13 @@
+:root {
+    --color-background-white: #ffffff;
+}
+
 body{
+    width: 100%;
     display: grid;
     grid-template-columns: 40px repeat(12, 1fr) 40px;
     grid-template-rows: repeat(25, 100px);
+    background: var(--color-background-white);
 }
 
 h2 {
@@ -23,7 +29,6 @@ button {
 }
 
 p {
-    text-align: left;
     font-size: 20px;
     margin-top: 0px;
     margin-left: 0px;
@@ -51,6 +56,7 @@ p {
 
     .eventpictures {
         width: 100%;
+        object-fit: cover;
     }
 
     #event1 {
@@ -67,23 +73,25 @@ p {
 
 
 /* Podcast */
-    #TitelUsgangsgschichte {
+    #TitelPodcast {
         grid-area: 11 / 8 / span 1 / span 6 ;
         text-align: center;
         font-size: 50px;
     }
 
-    .usgangsgschichtepictures {
+    .podcastpictures {
         height: 100%;
+        width: 100%;
+        object-fit: cover;
     }
 
-    #UsgangsgschichtePictures {
+    #PodcastPictures {
         grid-area: 11 / 2 / span 4 / span 5;
         align-content: center;
         overflow: hidden;
     }
 
-    #TextUsgangsgschichte {
+    #TextPodcast {
         grid-area: 12 / 8 / span 2 / span 6;
         text-align: left;
         font-size: 20px;
@@ -105,6 +113,8 @@ p {
 
     .teampictures {
         width: 100%;
+        height: 100%;
+        object-fit: cover;       
     }
 
     #TeamPictures {
@@ -114,8 +124,180 @@ p {
     }
 
     #TextTeam {
-        grid-area: 21 / 4 / span 2 / span 8;
+        grid-area: 21 / 5 / span 2 / span 6;
         text-align: left;
         font-size: 20px;
         width: 100%;
     }
+
+
+
+
+@media screen and (max-width: 1000px) {
+    p {
+        font-size: 16px;
+    }
+
+    #buttontop {
+        grid-column: 2/ span 12;
+        grid-row: 1/ span 3;
+        text-align: center;
+        font-size: 50px;
+    }
+
+    /* Events */
+        #event1 {
+            grid-area: 6 / 2 / span 3 / span 4;
+        }
+
+        #event2 {
+            grid-area: 6 / 6 / span 3 / span 4;
+        }
+
+        #event3 {
+            grid-area: 6 / 10 / span 3 / span 4;
+        }
+
+    /* Podcast */
+        #TitelPodcast {
+            grid-area: 9 / 2 / span 1 / span 12 ;
+            text-align: center;
+            font-size: 50px;
+        }
+
+        .podcastpictures {
+            width: 100%;
+            height: auto;
+
+        }
+
+        #PodcastPictures {
+            grid-area: 10 / 2 / span 3 / span 12;
+            overflow: hidden;
+        }
+
+        #TextPodcast {
+            grid-area: 13 / 2 / span 2 / span 7;
+            text-align: left;
+            font-size: 20px;
+            width: 100%;
+        }
+
+        #buttonpodcast {
+            grid-area: 14 / 9 / span 1 / span 5;
+            text-align: center;
+        }
+
+    /* Team */
+        #TeamPictures {
+            grid-area: 16 / 2 / span 3 / span 12;
+            align-content: center;
+            overflow: hidden;
+        }
+
+        #TextTeam {
+            grid-area: 19 / 4 / span 2 / span 8;
+            text-align: left;
+            font-size: 20px;
+            width: 100%;
+        }
+}
+
+
+@media screen and (max-width: 650px) {
+    h2 {
+        padding-left: 0px;
+        margin-left: 0px;
+    }
+
+    h3 {
+        margin: 0%;
+    }
+
+    /* Events */
+        #TitelEvents {
+            grid-area: 5 / 2 / span 1 /span 12 ;
+            text-align: center;
+            font-size: 50px;
+        }
+
+        .events {
+            margin: 10px;
+        }
+
+        .eventpictures {
+            width: 100%;
+        }
+
+        #event1 {
+            grid-area: 6 / 4 / span 3 / span 8;
+        }
+
+        #event2 {
+            grid-area: 9 / 4 / span 3 / span 8;
+        }
+
+        #event3 {
+            grid-area: 12 / 4 / span 3 / span 8;
+        }
+
+
+    /* Podcast */
+        #TitelPodcast {
+            grid-area: 16 / 3 / span 1 / span 10;
+            text-align: left;
+            font-size: 50px;
+        }
+
+        .podcastpictures {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        #PodcastPictures {
+            grid-area: 13 / 2 / span 3 / span 12;
+            align-content: center;
+            overflow: hidden;
+        }
+
+        #TextPodcast {
+            grid-area: 17 / 3 / span 2 / span 10;
+            text-align: left;
+            font-size: 20px;
+            width: 100%;
+        }
+
+        #buttonpodcast {
+            grid-area: 19 / 5 / span 1 / span 6;
+            text-align: center;
+        }
+
+    /* Team */
+        #TitelTeam {
+            grid-area: 21 / 2 / span 1 / span 12 ;
+            text-align: left;
+            font-size: 100px;
+            color: white;
+        }
+
+        .teampictures {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;       
+        }
+
+        #TeamPictures {
+            grid-area: 21 / 2 / span 3 / span 12;
+            align-content: center;
+            overflow: hidden;
+        }
+
+        #TextTeam {
+            grid-area: 24 / 3 / span 2 / span 10;
+            text-align: left;
+            font-size: 20px;
+            width: 100%;
+        }
+
+}
