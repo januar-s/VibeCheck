@@ -1,7 +1,7 @@
 body {
-    display: grid;
+    /*display: grid;
     grid-template-columns: 40px repeat(12, 1fr) 40px;
-    grid-template-rows: 600px 1fr;
+    grid-template-rows: 600px 1fr;*/
 }
 
 h1 {
@@ -13,11 +13,9 @@ h1 {
 }
 
 .bars {
-    grid-column: 2 / span 12;
-    grid-row: 200px;
-    display: grid;
-    grid-template-columns: 60px repeat(11, 1fr);
-    grid-template-rows: repeat(10, 1fr);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .bars p,
@@ -34,6 +32,7 @@ h1 {
     justify-content: flex-start;
     align-items: flex-end;
     margin-right: 0px;
+    margin-top: -35px; /* Sorry, this is an ugly hack */
 
     writing-mode: vertical-rl;
     transform: rotate(180deg);
@@ -42,477 +41,42 @@ h1 {
 
 }
 
-
-.date1 {
-    grid-column: 1/ span 1;
-    grid-row: 1 / span 1;
-    font-weight: lighter;
-    margin: 0px;
-}
-
-.date2 {
-    grid-column: 5/ span 1;
-    grid-row: 1 / span 1;
-    font-weight: lighter;
-    margin: 0px;
-}
-
-.date3 {
-    grid-column: 9/ span 1;
-    grid-row: 1 / span 1;
-    font-weight: lighter;
-    margin: 0px;
-}
-
-.date4 {
-    grid-column: 1/ span 1;
-    grid-row: 2 / span 1;
-    font-weight: lighter;
-    margin: 0px;
-}
-
-.date5 {
-    grid-column: 5/ span 1;
-    grid-row: 2 / span 1;
-    font-weight: lighter;
-    margin: 0px;
-}
-
-.date6 {
-    grid-column: 9/ span 1;
-    grid-row: 2 / span 1;
-    font-weight: lighter;
-    margin: 0px;
-}
-
-.date7 {
-    grid-column: 1/ span 1;
-    grid-row: 3 / span 1;
-    font-weight: lighter;
-    margin: 0px;
-}
-
-.date8 {
-    grid-column: 5/ span 1;
-    grid-row: 3 / span 1;
-    font-weight: lighter;
-    margin: 0px;
-}
-
-.date9 {
-    grid-column: 9/ span 1;
-    grid-row: 3 / span 1;
-    font-weight: lighter;
-    margin: 0px;
-}
-
-.date10 {
-    grid-column: 1/ span 1;
-    grid-row: 4 / span 1;
-    font-weight: lighter;
-    margin: 0px;
-}
-
-.date11 {
-    grid-column: 5/ span 1;
-    grid-row: 4 / span 1;
-    font-weight: lighter;
-    margin: 0px;
-}
-
-.date12 {
-    grid-column: 9/ span 1;
-    grid-row: 4 / span 1;
-    font-weight: lighter;
-    margin: 0px;
-}
-
-.date13 {
-    grid-column: 1/ span 1;
-    grid-row: 5 / span 1;
-    font-weight: lighter;
-    margin: 0px;
-}
-
-.date14 {
-    grid-column: 5/ span 1;
-    grid-row: 5 / span 1;
-    font-weight: lighter;
-    margin: 0px;
-}
-
-.date15 {
-    grid-column: 9/ span 1;
-    grid-row: 5 / span 1;
-    font-weight: lighter;
-    margin: 0px;
-}
-
-.date16 {
-    grid-column: 1/ span 1;
-    grid-row: 6 / span 1;
-    font-weight: lighter;
-    margin: 0px;
-}
-
-.date17 {
-    grid-column: 5/ span 1;
-    grid-row: 6 / span 1;
-    font-weight: lighter;
-    margin: 0px;
-}
-
-.date18 {
-    grid-column: 9/ span 1;
-    grid-row: 6 / span 1;
-    font-weight: lighter;
-    margin: 0px;
-}
-
-.date19 {
-    grid-column: 1/ span 1;
-    grid-row: 7 / span 1;
-    font-weight: lighter;
-    margin: 0px;
-}
-
-.date20 {
-    grid-column: 5/ span 1;
-    grid-row: 7 / span 1;
-    font-weight: lighter;
-    margin: 0px;
-}
-
-.date21 {
-    grid-column: 9/ span 1;
-    grid-row: 7 / span 1;
-    font-weight: lighter;
-    margin: 0px;
-}
-
-.date22 {
-    grid-column: 1/ span 1;
-    grid-row: 8 / span 1;
-    font-weight: lighter;
-    margin: 0px;
-}
-
-.date23 {
-    grid-column: 5/ span 1;
-    grid-row: 8 / span 1;
-    font-weight: lighter;
-    margin: 0px;
-}
-
-.date24 {
-    grid-column: 9/ span 1;
-    grid-row: 8 / span 1;
-    font-weight: lighter;
-    margin: 0px;
-}
-
-.date25 {
-    grid-column: 1/ span 1;
-    grid-row: 9 / span 1;
-    font-weight: lighter;
-    margin: 0px;
-}
-
-.date26 {
-    grid-column: 5/ span 1;
-    grid-row: 9 / span 1;
-    font-weight: lighter;
-    margin: 0px;
-}
-
-.date27 {
-    grid-column: 9/ span 1;
-    grid-row: 9 / span 1;
-    font-weight: lighter;
-    margin: 0px;
-}
-
-.date28 {
-    grid-column: 1/ span 1;
-    grid-row: 10 / span 1;
-    font-weight: lighter;
-    margin: 0px;
-}
-
-.date29 {
-    grid-column: 5/ span 1;
-    grid-row: 10 / span 1;
-    font-weight: lighter;
-    margin: 0px;
-}
-
-.date30 {
-    grid-column: 9/ span 1;
-    grid-row: 10 / span 1;
-    font-weight: lighter;
-    margin: 0px;
+.date {
+    margin-left: 0px;
 }
 
 
-.product1 {
-    grid-column: 2 / span 3;
-    grid-row: 1 / span 1;
+
+.product {
     text-align: right;
     position: relative;
-
+    display: flex;
+    
+    width: 33%;
+    flex-basis: auto;
 }
 
-.product2 {
-    grid-column: 6 / span 3;
-    grid-row: 1 / span 1;
-    text-align: center;
-    text-align: right;
-}
 
-.product3 {
-    grid-column: 10 / span 3;
-    grid-row: 1 / span 1;
-    text-align: center;
-    text-align: right;
-}
 
-.product4 {
-    grid-column: 2 / span 3;
-    grid-row: 2 / span 1;
-    text-align: center;
-    text-align: right;
-}
-
-.product5 {
-    grid-column: 6 / span 3;
-    grid-row: 2 / span 1;
-    text-align: center;
-    text-align: right;
-}
-
-.product6 {
-    grid-column: 10 / span 3;
-    grid-row: 2 / span 1;
-    text-align: center;
-    text-align: right;
-}
-
-.product7 {
-    grid-column: 2 / span 3;
-    grid-row: 3 / span 1;
-    text-align: right;
-    position: relative;
-
-}
-
-.product8 {
-    grid-column: 6 / span 3;
-    grid-row: 3 / span 1;
-    text-align: center;
-    text-align: right;
-}
-
-.product9 {
-    grid-column: 10 / span 3;
-    grid-row: 3 / span 1;
-    text-align: center;
-    text-align: right;
-}
-
-.product10 {
-    grid-column: 2 / span 3;
-    grid-row: 4 / span 1;
-    text-align: center;
-    text-align: right;
-}
-
-.product11 {
-    grid-column: 6 / span 3;
-    grid-row: 4 / span 1;
-    text-align: center;
-    text-align: right;
-}
-
-.product12 {
-    grid-column: 10 / span 3;
-    grid-row: 4 / span 1;
-    text-align: center;
-    text-align: right;
-}
-
-.product13 {
-    grid-column: 2 / span 3;
-    grid-row: 5 / span 1;
-    text-align: right;
-    position: relative;
-
-}
-
-.product14 {
-    grid-column: 6 / span 3;
-    grid-row: 5 / span 1;
-    text-align: center;
-    text-align: right;
-}
-
-.product15 {
-    grid-column: 10 / span 3;
-    grid-row: 5 / span 1;
-    text-align: center;
-    text-align: right;
-}
-
-.product16 {
-    grid-column: 2 / span 3;
-    grid-row: 6 / span 1;
-    text-align: center;
-    text-align: right;
-}
-
-.product17 {
-    grid-column: 6 / span 3;
-    grid-row: 6 / span 1;
-    text-align: center;
-    text-align: right;
-}
-
-.product18 {
-    grid-column: 10 / span 3;
-    grid-row: 6 / span 1;
-    text-align: center;
-    text-align: right;
-}
-
-.product19 {
-    grid-column: 2 / span 3;
-    grid-row: 7 / span 1;
-    text-align: right;
-    position: relative;
-
-}
-
-.product20 {
-    grid-column: 6 / span 3;
-    grid-row: 7 / span 1;
-    text-align: center;
-    text-align: right;
-}
-
-.product21 {
-    grid-column: 10 / span 3;
-    grid-row: 7 / span 1;
-    text-align: center;
-    text-align: right;
-}
-
-.product22 {
-    grid-column: 2 / span 3;
-    grid-row: 8 / span 1;
-    text-align: center;
-    text-align: right;
-}
-
-.product23 {
-    grid-column: 6 / span 3;
-    grid-row: 8 / span 1;
-    text-align: center;
-    text-align: right;
-}
-
-.product24 {
-    grid-column: 10 / span 3;
-    grid-row: 8 / span 1;
-    text-align: center;
-    text-align: right;
-}
-
-.product25 {
-    grid-column: 2 / span 3;
-    grid-row: 9 / span 1;
-    text-align: right;
-    position: relative;
-
-}
-
-.product26 {
-    grid-column: 6 / span 3;
-    grid-row: 9 / span 1;
-    text-align: center;
-    text-align: right;
-}
-
-.product27 {
-    grid-column: 10 / span 3;
-    grid-row: 9 / span 1;
-    text-align: center;
-    text-align: right;
-}
-
-.product28 {
-    grid-column: 2 / span 3;
-    grid-row: 10 / span 1;
-    text-align: center;
-    text-align: right;
-}
-
-.product29 {
-    grid-column: 6 / span 3;
-    grid-row: 10 / span 1;
-    text-align: center;
-    text-align: right;
-}
-
-.product30 {
-    grid-column: 10 / span 3;
-    grid-row: 10 / span 1;
-    text-align: center;
-    text-align: right;
-}
-
-.product1 img,
-.product2 img,
-.product3 img,
-.product4 img,
-.product5 img,
-.product6 img,
-.product7 img,
-.product8 img,
-.product9 img,
-.product10 img,
-.product11 img,
-.product12 img,
-.product13 img,
-.product14 img,
-.product15 img,
-.product16 img,
-.product17 img,
-.product18 img,
-.product19 img,
-.product20 img,
-.product21 img,
-.product22 img,
-.product23 img,
-.product24 img,
-.product25 img,
-.product26 img,
-.product27 img,
-.product28 img,
-.product29 img,
-.product30 img {
-    max-width: 100%;
+.product img {
+    width: 100%;
     height: auto;
     margin-bottom: 0px;
-    margin-top: 50px
+    margin-top: 50px;
+    object-fit: cover;
 }
 
 .ortschaft {
     font-weight: lighter;
     font-size: 25px;
+
+    
 }
 
 .eventtitel {
-    font-size: 40px;
+    font-size: 35px;
     font-weight: bold;
+    
 }
 
 .musicstyle {
@@ -591,4 +155,83 @@ a:hover {
 .abinusgang:hover {
     background-color: black;
     color: white;
+}
+
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+
+    .product {
+        text-align: right;
+        position: relative;
+        display: flex;
+        
+        width: 50%;
+        flex-basis: auto;
+    }
+
+    .ortschaft {
+        font-weight: lighter;
+        font-size: 20px;
+    
+        
+    }
+    
+    .eventtitel {
+        font-size: 35px;
+        font-weight: bold;
+        
+    }
+    
+    .musicstyle {
+        font-size: 20px;
+        font-weight: 700;
+    }
+    
+    .preis {
+        font-size: 12px;
+    }
+    
+    .alter {
+        font-size: 10px;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+
+    .product {
+        text-align: right;
+        position: relative;
+        display: flex;
+        
+        width: 90%;
+        flex-basis: auto;
+    }
+
+    .ortschaft {
+        font-weight: lighter;
+        font-size: 20px;
+    
+        
+    }
+    
+    .eventtitel {
+        font-size: 35px;
+        font-weight: bold;
+        
+    }
+    
+    .musicstyle {
+        font-size: 20px;
+        font-weight: 700;
+    }
+    
+    .preis {
+        font-size: 12px;
+    }
+    
+    .alter {
+        font-size: 10px;
+    }
+
 }
