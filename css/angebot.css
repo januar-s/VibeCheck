@@ -1,8 +1,4 @@
-body {
-    /*display: grid;
-    grid-template-columns: 40px repeat(12, 1fr) 40px;
-    grid-template-rows: 600px 1fr;*/
-}
+
 
 h1 {
     grid-column: 4 / span 8;
