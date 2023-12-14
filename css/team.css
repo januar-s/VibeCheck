@@ -1,32 +1,57 @@
-h1{
-    font-size: 80px;
-    text-align: center;
-    margin: 10px;
+main {
+    grid-column: 2 / span 12;
+    padding: 20px;
 }
 
-video{
+.titel h1, .titel h2 {
+    font-family: 'Arial', sans-serif;
+    color: #333; 
+    margin: 0;
+    padding: 10px 0;
+}
+
+#video {
     display: flex;
     justify-content: center;
+    padding: 20px;
+}
+
+.team {
+    margin-bottom: 20px; 
+    border-radius: 10px; 
+}
+
+.team img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.team h3, .team h4 {
+    margin: 0;
+    padding: 5px 0;
+}
+
+.team p {
+    line-height: 1.6;
+}
+
+.infos {
+    padding: 20px;
+    margin-bottom: 20px; 
+}
+
+.infos h3, .infos h4 {
+    margin: 0;
+    padding: 5px 0;
+}
+
+h1 {
+    text-align: center;
+    font-size: 145px;
 }
 
 h2{
     text-align: center;
-    font-size: 40px;
-}
-
-#portraitJan{
-    height: 240px;
-    width: auto;
-}
-
-#hallochen{
-    grid-area: 2 / 2 / span 3 / span 14;
-    text-align: center;
-    font-size: 50px;   
-    background-color: blue;
-}
-
-#video{
-    grid-area: 3 / 2 / span 1 / span 12;
-    background-color: aqua;
+    font-size: 50px;
 }
