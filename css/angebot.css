@@ -1,4 +1,7 @@
-
+body {
+    display: grid;
+    grid-template-columns: 40px repeat(12, 1fr) 40px;
+}
 
 h1 {
     grid-column: 4 / span 8;
@@ -9,6 +12,7 @@ h1 {
 }
 
 .bars {
+    grid-column: 1 / span 14;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
