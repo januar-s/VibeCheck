@@ -3,9 +3,9 @@ body {
     background-size: 100% 9000px;
     background-position: center;
     z-index: -8888;
+    margin: 0;
+    padding: 0;
 }
-
-
 
 .grid-item {
     display: grid;
