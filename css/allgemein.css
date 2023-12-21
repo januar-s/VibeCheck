@@ -2,6 +2,24 @@
     width: 70px;
 }
 
+.grid-item {
+    display: grid;
+    grid-template-columns: 40px repeat(12, 1fr) 40px;
+
+    margin: 0;
+    padding: 0;
+    grid-column: 1 / span 14;
+    grid-row: 1 /span 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.412);
+    z-index: 9990;
+}
 
 .header-right {
     display: flex;
@@ -162,6 +180,8 @@ a {
 
 
 footer {
+    display: grid;
+    grid-template-columns: 40px repeat(12, 1fr) 40px;
     grid-column: 1 / span 14;
     grid-row: 15 / span 1;
     display: flex;
