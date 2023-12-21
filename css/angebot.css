@@ -68,7 +68,7 @@ a {
 
     opacity: 0;
     /* hide this */
-    z-index: 9992;
+    z-index: 9993;
     /* and place it over the hamburger */
 
     -webkit-touch-callout: none;
@@ -87,7 +87,7 @@ a {
     background: #000000;
     border-radius: 3px;
 
-    z-index: 3;
+    z-index: 9992;
 
     transform-origin: 4px 0px;
 
@@ -268,7 +268,6 @@ h1 {
     display: grid;
     grid-template-columns: 50% 10% 40%;
     grid-template-rows: 1fr;
-    z-index: -1;
 }
 
 .deinvibeplace {
