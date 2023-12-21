@@ -1,17 +1,506 @@
 
+.grid-item {
+    display: grid;
+    grid-template-columns: 40px repeat(12, 1fr) 40px;
+
+    margin: 0;
+    padding: 0;
+    grid-column: 1 / span 14;
+    grid-row: 1 /span 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.412);
+    z-index: 9990;
+}
+
+.header-left img {
+    width: 70px;
+}
+
+
+.header-right {
+    display: flex;
+    gap: 50px;
+    padding-right: 43px
+}
+
+.header-right img {
+    width: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: #232323;
+
+    transition: color 0.3s ease;
+}
+
+/*a:hover {
+    color: tomato;
+}*/
+
+#menuToggle {
+    display: block;
+    position: absolute;
+    top: 46px;
+    right: 30px;
+
+    z-index: 9991;
+
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+#menuToggle input {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+
+    cursor: pointer;
+
+    opacity: 0;
+    /* hide this */
+    z-index: 9993;
+    /* and place it over the hamburger */
+
+    -webkit-touch-callout: none;
+}
+
+/*
+  * Just a quick hamburger
+  */
+#menuToggle span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+
+    background: #000000;
+    border-radius: 3px;
+
+    z-index: 9992;
+
+    transform-origin: 4px 0px;
+
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+        background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+        opacity 0.55s ease;
+}
+
+#menuToggle span:first-child {
+    transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+}
+
+/* 
+  * Transform all the slices of hamburger
+  * into a crossmark.
+  */
+#menuToggle input:checked~span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #232323;
+}
+
+/*
+  * But let's hide the middle one.
+  */
+#menuToggle input:checked~span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+  * Ohyeah and the last one should go the other direction
+  */
+#menuToggle input:checked~span:nth-last-child(2) {
+    opacity: 1;
+    transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+  * Make this absolute positioned
+  * at the top left of the screen
+  */
+#menu {
+    position: absolute;
+    width: 300px;
+    height: 1000px;
+    margin: -100px 0 0 0;
+    padding: 50px;
+    padding-top: 125px;
+    right: -100px;
+
+    background: #ededed;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    /* to stop flickering of text in safari */
+
+    transform-origin: 0% 0%;
+    transform: translate(100%, 0);
+
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+}
+
+#menu li {
+    padding: 10px 0;
+    font-size: 22px;
+}
+
+/*
+  * And let's fade it in from the left
+  */
+#menuToggle input:checked~ul {
+    transform: none;
+    opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+    #menu {
+        transform: none;
+        opacity: 0;
+
+        transition: opacity 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.h1center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -8%;
+}
 
 h1 {
-    grid-column: 4 / span 8;
-    grid-row: 1 / span 1;
-    justify-self: center;
-    align-self: center;
     font-size: 145px;
 }
+
+.tophits {
+    display: grid;
+    grid-template-columns: 40px 1fr 150px 40px;
+    grid-template-rows: 500px;
+    margin-top: -6.5%;
+}
+
+.toptop {
+    grid-column: 3 /span 1;
+    grid-row: 1 / span 1;
+    display: flex;
+    z-index: -1;
+    justify-content: center;
+    margin-top: 20px;
+
+}
+
+.topplace {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgb(0, 0, 0);
+    width: 100px;
+    height: 100px;
+}
+
+.top {
+    color: white;
+    font-size: 20px;
+    text-justify: center;
+    text-align: center;
+    line-height: 30px;
+
+}
+
+.eventhittextplace {
+    grid-column: 2 /span 1;
+    grid-row: 1 / span 1;
+    display: flex;
+    margin-left: 4%;
+    margin-top: 10px;
+}
+
+.eventhittext {
+    color: white;
+    font-size: 30px;
+    line-height: 0px;
+    letter-spacing: 2px;
+}
+
+
+.auswahl {
+    grid-column: 2 / span 2;
+    grid-row: 1 /span 1;
+    display: grid;
+    grid-template-columns: 50% 10% 40%;
+    grid-template-rows: 1fr;
+}
+
+.deinvibeplace {
+    z-index: 1;
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+    display: flex;
+    justify-content: right;
+    align-items: end;
+}
+
+.deinvibebox {
+    background-color: rgb(0, 0, 0);
+    width: 600px;
+    height: 300px;
+    border-radius: 5px;
+    box-shadow: 0px 40px 30px -20px rgba(0, 0, 0, 0.3);
+}
+
+.deinvibetext {
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 30px;
+
+}
+
+.auswahltype {
+    display: flex;
+    margin-top: -5%;
+}
+
+.musik {
+    color: white;
+    font-size: 20px;
+    margin-left: 70px;
+
+}
+
+.was {
+    color: white;
+    font-size: 20px;
+    margin-left: 46%;
+}
+
+.checkboxmusik ul {
+    margin-top: 2px;
+    margin-left: 4%;
+}
+
+.checkboxmusik li {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    list-style-type: none;
+}
+
+
+.checkboxmusik2 ul {
+    margin-top: -146px;
+    margin-left: 30%;
+}
+
+.checkboxmusik2 li {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    list-style-type: none;
+}
+
+
+.checkboxwas ul {
+    margin-top: -146px;
+    margin-left: 59%;
+}
+
+.checkboxwas li {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    list-style-type: none;
+}
+
+
+
+.checkbox-container {
+    margin-bottom: 6px;
+}
+
+.hitcenter {
+    grid-column: 2 /span 2;
+    grid-row: 1 / span 1;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+.hit {
+    grid-column: 2 / span 13;
+    grid-row: 1 / span 1;
+    z-index: -2;
+    display: flex;
+    flex-wrap: wrap;
+    width: 1425px;
+    height: 300px;
+}
+
+
+
+
+
+
+
+.kalender {
+    z-index: 1;
+    grid-column: 3 / span 1;
+    grid-row: 1 / span 1;
+
+    display: flex;
+    justify-content: left;
+    align-items: end;
+
+
+}
+
+
+
+.calendar {
+    display: inline-grid;
+    justify-content: center;
+    align-items: center;
+    background: #000000;
+    padding: 10px;
+    width: 300px;
+    height: 290px;
+    border-radius: 5px;
+    box-shadow: 0px 40px 30px -20px rgba(0, 0, 0, 0.3);
+
+    .month {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 20px;
+        margin-bottom: 20px;
+        font-weight: 300;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .year {
+            font-weight: 600;
+            margin-left: 10px;
+        }
+
+        &:hover {
+            background-color: #969696;
+        }
+    }
+
+    .days {
+
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+
+        display: flex;
+        justify-content: space-between;
+
+        color: #ffffff;
+        font-weight: 600;
+        margin-bottom: 15px;
+    }
+
+    .dates {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+
+        .slay {
+            cursor: pointer;
+            outline: 0;
+            border: 0;
+            background-color: transparent;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 16px;
+            justify-self: center;
+            align-self: center;
+            width: 30px;
+            height: 30px;
+            border-radius: 50px;
+            margin: 2px;
+            transition-duration: .2s;
+            color: white;
+
+
+            &:hover {
+                background-color: #969696;
+            }
+
+            &:focus {
+                background: #ffffff;
+                color: #0e0e0e;
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .bars {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    margin-right: 2.5%;
+    margin-top: 3%;
+    margin-bottom: 39px;
 }
 
 .bars p,
@@ -28,7 +517,8 @@ h1 {
     justify-content: flex-start;
     align-items: flex-end;
     margin-right: 0px;
-    margin-top: -35px; /* Sorry, this is an ugly hack */
+    margin-top: -35px;
+    /* Sorry, this is an ugly hack */
 
     writing-mode: vertical-rl;
     transform: rotate(180deg);
@@ -47,7 +537,7 @@ h1 {
     text-align: right;
     position: relative;
     display: flex;
-    
+
     width: 33%;
     flex-basis: auto;
 }
@@ -64,15 +554,15 @@ h1 {
 
 .ortschaft {
     font-weight: lighter;
-    font-size: 25px;
+    font-size: 20px;
 
-    
+
 }
 
 .eventtitel {
     font-size: 35px;
     font-weight: bold;
-    
+
 }
 
 .musicstyle {
@@ -160,7 +650,7 @@ a:hover {
         text-align: right;
         position: relative;
         display: flex;
-        
+
         width: 50%;
         flex-basis: auto;
     }
@@ -168,25 +658,25 @@ a:hover {
     .ortschaft {
         font-weight: lighter;
         font-size: 20px;
-    
-        
+
+
     }
-    
+
     .eventtitel {
         font-size: 35px;
         font-weight: bold;
-        
+
     }
-    
+
     .musicstyle {
         font-size: 20px;
         font-weight: 700;
     }
-    
+
     .preis {
         font-size: 12px;
     }
-    
+
     .alter {
         font-size: 10px;
     }
@@ -199,7 +689,7 @@ a:hover {
         text-align: right;
         position: relative;
         display: flex;
-        
+
         width: 90%;
         flex-basis: auto;
     }
@@ -207,27 +697,77 @@ a:hover {
     .ortschaft {
         font-weight: lighter;
         font-size: 20px;
-    
-        
+
+
     }
-    
+
     .eventtitel {
         font-size: 35px;
         font-weight: bold;
-        
+
     }
-    
+
     .musicstyle {
         font-size: 20px;
         font-weight: 700;
     }
-    
+
     .preis {
         font-size: 12px;
     }
-    
+
     .alter {
         font-size: 10px;
     }
 
+}
+
+
+
+footer {
+    display: grid;
+    grid-template-columns: 40px repeat(12, 1fr) 40px;
+    grid-column: 1 / span 14;
+    grid-row: 15 / span 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(187, 187, 187, 0.468);
+    color: black;
+    padding: 20px;
+}
+
+.titelAdresse {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+footer p {
+    white-space: pre-line;
+    font-family: Arial, sans-serif;
+    padding: 10px;
+    line-height: 1.5;
+}
+
+.footer-left,
+.footer-right {
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+}
+
+.footer-left p {
+    margin: 0;
+    margin-right: 20px;
+}
+
+.social-icon {
+    height: 30px;
+    margin-right: 10px;
+}
+
+.footer-right a {
+    margin-left: 10px;
+    color: black;
+    text-decoration: none;
 }
