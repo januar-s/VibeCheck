@@ -3,17 +3,7 @@ html, body {
     overflow-x: hidden;
 }
 
-
-.header-left img {
-    width: 70px;
-}
-
-.grid-item {
-    display: grid;
-    grid-template-columns: 40px repeat(12, 1fr) 40px;
-
-    margin: 0;
-    padding: 0;
+header {
     grid-column: 1 / span 14;
     grid-row: 1 /span 1;
     display: flex;
@@ -22,9 +12,11 @@ html, body {
     padding: 20px;
     position: sticky;
     top: 0;
-    bottom: 0;
-    background-color: rgba(255, 255, 255, 0.412);
-    z-index: 9990;
+    backdrop-filter: blur(2px);
+}
+
+.header-left img {
+    width: 70px;
 }
 
 .header-right {
@@ -40,7 +32,6 @@ html, body {
 a {
     text-decoration: none;
     color: #232323;
-
     transition: color 0.3s ease;
 }
 
@@ -88,7 +79,7 @@ a {
     margin-bottom: 5px;
     position: relative;
 
-    background: #000000;
+    background: white;
     border-radius: 3px;
 
     z-index: 1;
@@ -181,33 +172,19 @@ a {
 }
 
 
-
-
-
-
 footer {
-    display: grid;
-    grid-template-columns: 40px repeat(12, 1fr) 40px;
     grid-column: 1 / span 14;
     grid-row: 15 / span 1;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgba(187, 187, 187, 0.468);
-    color: black;
+    background-color: rgba(187, 187, 187, 0.174);
     padding: 20px;
 }
 
 .titelAdresse {
     font-weight: bold;
-    font-size: 20px;
-}
-
-footer p {
-    white-space: pre-line;
-    font-family: Arial, sans-serif;
-    padding: 10px;
-    line-height: 1.5;
+    font-size: 25px;
 }
 
 .footer-left{
@@ -216,19 +193,18 @@ footer p {
     align-items: center;
 }
 
-#footerText{
+.footerText{
     font-style: Arial, sans-serif;
-    display: block;
     margin-left: 10px;
-    margin-bottom: 10px;
-    color: black;
+    margin-bottom: none;
+    margin-top: none;
+    color: white;
     text-decoration: none;
-    transition: color 0.3s;/* Smooth color transition for hover effect */
 }
 
 .social-icon {
     height: 30px;
-    margin-right: 10px;
+    gap: 10px;
 }
 
 .footer-right a {
