@@ -184,7 +184,7 @@ footer {
     grid-template-rows: 1fr 1fr;
     background-color: rgba(21, 6, 40, 0.798);
     padding: 20px;
-    color: white;
+    color: rgb(153, 153, 153);
 }
 
 .titeladresse {
@@ -233,13 +233,15 @@ footer {
     font-size: 20px;
     margin-left: 10px;
     margin-bottom: 10px;
-    color: rgb(255, 255, 255);
+    color: rgb(153, 153, 153);
     text-decoration: none;
-    transition: color 0.3s;/* Smooth color transition for hover effect */
+    transition: color 0.2s;/* Smooth color transition for hover effect */
 }
 
+
 .footer-right a:hover {
-    color: grey; /* Link color on hover */
+    color: rgb(203, 203, 203); /* Link color on hover */
+    text-decoration: underline;
 }
 
 .icons-footer{
@@ -252,7 +254,7 @@ hr {
     grid-column: 2 / span 2;
     grid-row: 2 / span 1;
     margin-top: 60px;
-    border: 1px solid #ccc;
+    border: 1px solid rgb(153, 153, 153);
     width: 1250px;
     height: 0px;
 
@@ -264,4 +266,5 @@ hr {
     height: 40px;
     margin-top: 100px;
     margin-right: 50px;
+    color: rgb(153, 153, 153);
 }
