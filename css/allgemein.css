@@ -180,16 +180,17 @@ a {
 
 footer {
     display:grid;
-    grid-template-columns: 60px 1fr 1fr 50px;
-    grid-template-rows: 1fr 100px;
+    grid-template-columns: 110px 1fr 1fr 110px;
+    grid-template-rows: 1fr 1fr;
     background-color: rgba(21, 6, 40, 0.798);
     padding: 20px;
     color: white;
 }
 
-.titelAdresse {
+.titeladresse {
     font-weight: bold;
     font-size: 25px;
+    margin-bottom: 20px;
 }
 
 .footer-left{
@@ -207,16 +208,29 @@ footer {
     margin-bottom: -5px;
 }
 
+
+
 .footer-right{
     grid-column: 3 / span 1;
     grid-row: 1 / span 1;
     display: flex;
     justify-content: right;
+    margin-top: 25px;
+}
+
+.footer-spalteone{
+    margin-right: 90px;
+    
+}
+
+.linkfooter{
+    margin-top: 20px;
 }
 
 .footer-right a {
     font-style: Arial, sans-serif;
     display: block;
+    font-size: 20px;
     margin-left: 10px;
     margin-bottom: 10px;
     color: rgb(255, 255, 255);
@@ -229,12 +243,25 @@ footer {
 }
 
 .icons-footer{
-    grid-column: 2  span 1;
+    grid-column: 2 / span 1;
     grid-row: 2 / span 1;
+    align-self: center;
 }
+
+hr {
+    grid-column: 2 / span 2;
+    grid-row: 2 / span 1;
+    margin-top: 60px;
+    border: 1px solid #ccc;
+    width: 1250px;
+    height: 0px;
+
+
+  }
 
 
 .social-icon {
-    height: 30px;
-    gap: 10px;
+    height: 40px;
+    margin-top: 100px;
+    margin-right: 50px;
 }
