@@ -172,14 +172,19 @@ a {
 }
 
 
+
+
+
+
+
+
 footer {
-    grid-column: 1 / span 14;
-    grid-row: 15 / span 1;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgba(187, 187, 187, 0.174);
+    display:grid;
+    grid-template-columns: 60px 1fr 1fr 50px;
+    grid-template-rows: 1fr 100px;
+    background-color: rgba(21, 6, 40, 0.798);
     padding: 20px;
+    color: white;
 }
 
 .titelAdresse {
@@ -188,23 +193,25 @@ footer {
 }
 
 .footer-left{
-    font-family: Arial, sans-serif;
+    grid-column: 2 / span 1;
+    
     display: flex;
-    align-items: center;
+    align-items: left;
+    flex-direction: column;
+
+    font-family: Arial, sans-serif;
+    
 }
 
-.footerText{
-    font-style: Arial, sans-serif;
-    margin-left: 10px;
-    margin-bottom: none;
-    margin-top: none;
-    color: white;
-    text-decoration: none;
+.adresse-footer{
+    margin-bottom: -5px;
 }
 
-.social-icon {
-    height: 30px;
-    gap: 10px;
+.footer-right{
+    grid-column: 3 / span 1;
+    grid-row: 1 / span 1;
+    display: flex;
+    justify-content: right;
 }
 
 .footer-right a {
@@ -212,11 +219,22 @@ footer {
     display: block;
     margin-left: 10px;
     margin-bottom: 10px;
-    color: black;
+    color: rgb(255, 255, 255);
     text-decoration: none;
     transition: color 0.3s;/* Smooth color transition for hover effect */
 }
 
 .footer-right a:hover {
     color: grey; /* Link color on hover */
+}
+
+.icons-footer{
+    grid-column: 2  span 1;
+    grid-row: 2 / span 1;
+}
+
+
+.social-icon {
+    height: 30px;
+    gap: 10px;
 }
