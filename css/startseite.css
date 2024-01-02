@@ -15,17 +15,24 @@ body {
     display: grid;
     grid-template-columns: 40px repeat(12, 1fr) 40px;
     grid-template-rows: repeat(25, 100px);
-    background: var(--color-background-white);
+    background-image: url(/images/Hintergrund.png);
+    background-size: auto 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 h2 {
+    font-family: 'Super Rocky';
     font-size: 60px;
     margin: 0px;
+    color: white;
 }
 
 h3 {
     font-size: 30px;
     margin: 0%;
+    color: white;
 }
 
 p {
@@ -34,6 +41,7 @@ p {
     margin-left: 0px;
     padding-top: 0px;
     padding-left: 0px;
+    color: white;
 }
 
 button {
@@ -232,6 +240,9 @@ button {
     body {
         grid-template-columns: 15px repeat(12, 1fr) 15px;
         grid-template-rows: repeat(30, 100px);
+        background-image: url(/images/HintergrundHandy.png);
+        background-position: center;
+        background-size: 100% auto;
     }
 
     p {
