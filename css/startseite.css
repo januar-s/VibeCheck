@@ -22,21 +22,28 @@ body {
     background-attachment: fixed;
 }
 
+footer {
+    grid-column: 1 / span 14;
+    grid-row: 26 / span 4;
+}
+
 h2 {
-    font-family: 'Super Rocky';
-    font-size: 60px;
+    font-family: 'cheee-wowie', sans-serif;
+    font-size: 45px;
     margin: 0px;
     color: white;
 }
 
 h3 {
+    font-family: 'cheee-wowie', sans-serif;
     font-size: 30px;
     margin: 0%;
     color: white;
 }
 
 p {
-    font-size: 18px;
+    font-family: 'obviously-wide';
+    font-size: 14px;
     margin-top: 15px;
     margin-left: 0px;
     padding-top: 0px;
@@ -55,7 +62,7 @@ button {
 
 #buttontop {
     grid-column: 4/ span 8;
-    grid-row: 1/ span 3;
+    grid-row: 2/ span 3;
     text-align: center;
     font-size: 50px;
 }
