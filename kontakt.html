@@ -5,16 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/allgemein.css">
+    <link rel="stylesheet" href="css/kontakt.css">
     
 </head>
 <body>
-   <h1>Kontakt</h1>
-   <p>*Kontaktformular*</p>
-    <h2>Für Partygoers</h2>
-    <h3>VibeCheck.ch</h3>
-    <p>VibeCheck / Holzikofenweg 8 / 3007 Bern / +41 31 654 32 10 / info@vibecheck.ch / @suufgschichte</p>
-    <h2>Werde Partner</h2>
-    <h3>VibeCheck.ch/B2B</h3>
-    <p>VibeCheck / Holzikofenweg 8 / 3007 Bern / +41 31 654 32 10 / info@vibecheck.ch / @suufgschichte</p>
+    <h1>Kontaktformular</h1>
+
+    <p>Du hast ein Anliegen, Frage oder willst uns deine "Usgangsgschicht" für den Podcast zusenden? Nur zu! Wir freuen uns mega auf deine Kontaktaufnahme! <br>
+    Wir versuchen, dir so schnell wie möglich zu antworten. Bitte beachte, dass du mit der Einsendung deiner "Usgangsgschicht" automatisch zustimmst, dass wir sie in unserem Podcast erzählen dürfen.
+    
+    </p>
+
+    <form action="/dein-serverseitiger-endpunkt" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">E-Mail:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="reason">Grund der Kontaktaufnahme:</label>
+        <select id="reason" name="reason" required>
+            <option value="frage/anmerkung">Frage/Anmerkung</option>
+            <option value="Usgangsgschicht">Usgangsgschicht</option>
+            <option value="Partnerschaft">Partnerschaft</option>
+        </select>
+
+        <label for="message">Nachricht:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit" onclick="showSuccessMessage()">Absenden</button>
+
+        <div class="success-message" id="successMessage">
+            Vielen Dank! Dein Formular wurde erfolgreich abgesendet.
+        </div>
+    </form>
+    <script>
+        function showSuccessMessage() {
+            document.getElementById("successMessage").style.display = "block";
+        }
+    </script>
 </body>
 </html>
