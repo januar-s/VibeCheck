@@ -1,0 +1,26 @@
+body {
+    
+    background-image: url(/images/Hintergrund.png);
+    background-size: 100% 9000px;
+    background-position: center;
+}
+
+h1 {
+    font-size: 145px;
+    color: white;
+}
+
+h2{
+    font-size: 50px;
+    color: white;
+}
+
+p{
+    color: white;
+    font-size: 15px;
+}
+
+h3{
+    color: white;
+}
+
