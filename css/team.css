@@ -1,12 +1,21 @@
-body {
-    display: grid;
-    grid-template-columns: 40px repeat(12, 1fr) 40px;
+body,
+html {
     margin: 0;
     padding: 0;
+    width: 100%;
+}
+
+body {
+    min-width: fit-content;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 40px repeat(12, 1fr) 40px;
+    grid-template-rows: repeat(25, 100px);
     background-image: url(/images/Hintergrund.png);
-    background-size: 100% 9000px;
+    background-size: auto 100%;
     background-position: center;
-    z-index: -8888;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 main {
@@ -14,102 +23,254 @@ main {
     padding: 20px;
 }
 
-.titel h1, .titel h2 {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 10px 0;
-    color: white;
-}
-
-#video {
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-}
-
-.team {
-    margin-bottom: 20px; 
-    border-radius: 10px; 
-}
-
-.team img {
-    width: 100%;
-    height: auto;
-    border-radius: 50%;
-}
-
-.team h3, .team h4 {
-    margin: 0;
-    padding: 5px 0;
-}
-
-.team p {
-    line-height: 1.6;
-}
-
-.infos {
-    padding: 20px;
-    margin-bottom: 20px; 
-}
-
-.infos h3, .infos h4 {
-    margin: 0;
-    padding: 5px 0;
-    color: white;
-}
-
-h1 {
-    text-align: center;
-    font-size: 145px;
-    color: white;
-}
-
-h2{
-    text-align: center;
-    font-size: 50px;
-    color: white;
-}
-
 p{
     color: white;
     font-size: 15px;
+    font-family: 'obviously-wide';
 }
 
-h3{
+h1 {
+    margin: 0px;
+    text-align: center;
+    font-size: 145px;
     color: white;
-}
-
-h4{
-    color: white;
+    font-family: 'cheee-wowie', sans-serif;
 }
 
 .gruppenfoto {
-    height: 450px;
-    width: 100% !important;
+    height: 550px;
+    width: 100%;
     object-fit: cover;
     object-position: top center;
 }
 
+h2{
+    text-align: center;
+    font-size: 35px;
+    color: white;
+    font-family: 'obviously-wide';
+}
+
 .team{
-    padding: 20px;
-    margin: 20px;
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+    position: relative;
 }
 
-.infos{
-    padding: 20px;
-    margin: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-
-.portrait img {
+.portraitbild{
     width: 300px;
     height: auto;
-    border-radius: 10px;
-    justify-content: space-around;
-    align-items: flex-start;
 }
+
+#backImgJan{
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+}
+
+#backImgJan:hover{
+    opacity: 1;
+}
+
+#backImgWera{
+    position: absolute;
+    opacity: 0;
+}
+
+#backImgWera:hover{
+    opacity: 1;
+}
+
+#backImgNicole{
+    position: absolute;
+    opacity: 0;
+}
+
+#backImgNicole:hover{
+    opacity: 1;
+}
+
+#backImgStefi{
+    position: absolute;
+    opacity: 0;
+}
+
+#backImgStefi:hover{
+    opacity: 1;
+}
+
+
+.teamElement{
+    text-align: center;
+}
+
+
+.textli{
+    text-align: center;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+#textStefi{
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+h3{
+    color: white;
+    font-family: 'cheee-wowie', sans-serif;
+    font-size: 25px;
+    margin: 10px;
+    line-height: 5px;
+}
+
+h4{
+    color: white;
+    font-family: 'obviously-wide';
+    font-size: 15px;
+    font-weight: lighter;
+}
+
+summary{
+    color: white;
+    font-family: 'obviously-wide';
+    font-size: 12px;
+    line-height: 5px;
+    cursor: pointer;
+}
+
+summary:hover{
+    color: #f1009d;
+}
+
+
+
+
+#teamDu{
+    display: flex;
+    flex-direction: row;
+    margin-top: 80px;
+}
+#textDu, #funktionDu, #nameDu{
+    text-align: center;
+}
+#bildDu{
+    align-items: center;
+}
+.duBild{
+    width: 500px;
+    height: auto;
+}
+
+#geschichte{
+    font-family: 'cheee-wowie', sans-serif;
+    font-size: 50px;
+    color: white;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+}
+#infosGeschichte{
+    display: flex;
+}
+#textGeschichte{
+    margin-left: 30px;
+    margin-top: 300px;
+}
+
+#mission{
+    font-family: 'cheee-wowie', sans-serif;
+    font-size: 50px;
+    color: white;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+}
+#infosMission{
+    display: flex;
+    margin-bottom: 60px;
+}
+#textMission{
+    margin-left: 30px;
+    margin-top: 300px;
+}
+
+#infosWerte{
+    display: flex;
+    flex-direction: column;
+}
+#werte{
+    font-family: 'cheee-wowie', sans-serif;
+    font-size: 50px;
+    color: white;
+    margin-top: 50px;
+    text-align: center;
+}
+#benutzerfreundlich{
+    font-family: 'obviously-wide';
+    font-size: 20px;
+    color: white;
+    line-height: 70px;
+    margin-left: 10px;
+    text-align: center;
+}
+#benutzerfreundlichText{
+    text-align: center;
+}
+
+#respekt{
+    font-family: 'obviously-wide';
+    font-size: 20px;
+    color: white;
+    line-height: 70px;
+    margin-left: 10px;
+    text-align: center;
+}
+#respektText{
+    text-align: center;
+}
+
+#vielfalt{
+    font-family: 'obviously-wide';
+    font-size: 20px;
+    color: white;
+    line-height: 70px;
+    margin-left: 10px;
+    text-align: center;
+}
+#vielfaltText{
+    text-align: center;
+}
+
+#gemeinschaft{
+    font-family: 'obviously-wide';
+    font-size: 20px;
+    color: white;
+    line-height: 70px;
+    margin-left: 10px;
+    text-align: center;
+}
+#gemeinschaftText{
+    text-align: center;
+}
+
+
+#titelVideo{
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+}
+#textVideo{
+    text-align: center;
+    line-height: 70px;
+}
+#video {
+    display: flex;
+    justify-content: center;
+}
+
+
+
