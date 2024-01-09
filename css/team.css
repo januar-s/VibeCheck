@@ -109,16 +109,13 @@ h2{
 }
 
 
+
 .textli{
     text-align: center;
-    margin-left: 200px;
-    margin-right: 200px;
+    margin-left: 30px;
+    margin-right: 30px;
 }
 
-#textStefi{
-    margin-left: 150px;
-    margin-right: 150px;
-}
 
 h3{
     color: white;
@@ -164,7 +161,28 @@ summary:hover{
 .duBild{
     width: 500px;
     height: auto;
+    margin-left: 450px;
 }
+#duDatenschutz{
+    color: rgba(255, 255, 255, 0.752);
+    line-height: 5px;
+    font-size: 12px;
+    text-align: center;
+}
+.button {
+    background-color: rgba(255, 255, 255, 0.731);
+    border: none;
+    color: #7900e1;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family:  'obviously-wide';
+    font-size: 8px;
+    margin-top: 10px;
+    margin-left: 635px;
+    }
+    
 
 #geschichte{
     font-family: 'cheee-wowie', sans-serif;
@@ -266,10 +284,15 @@ summary:hover{
 #textVideo{
     text-align: center;
     line-height: 70px;
+    margin-bottom: 0px;
 }
-#video {
-    display: flex;
-    justify-content: center;
+#videoButton{
+    text-align: center;
+    padding-bottom: 40px;
+}
+#videoSource{
+    margin-left: 495px;
+    padding-bottom: 20px;
 }
 
 
