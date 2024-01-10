@@ -15,163 +15,131 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: -6%;
+
+    margin-top: 10px;
 }
 
 h1 {
     font-family: 'cheee-wowie', sans-serif;
     font-size: 10vw;
     color: white;
+    margin: 0px;
 }
 
-.tophits {
-    display: grid;
-    grid-template-columns: 40px 1fr 150px 40px;
-    grid-template-rows: 500px;
-    margin-top: -4.5%;
-}
-
-.toptop {
-    grid-column: 3 /span 1;
-    grid-row: 1 / span 1;
-    display: flex;
-    z-index: -1;
-    justify-content: center;
-    margin-top: 20px;
-
-}
-
-.topplace {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    background-color: rgb(0, 0, 0);
-    width: 8vw;
-    height: 8vw;
-}
-
-.top {
-    color: white;
-    font-family: 'obviously-wide';
-    font-size: 1.2vw;
-    font-weight: bold;
-    text-justify: center;
-    text-align: center;
-    line-height: 3vw;
-
-}
-
-.eventhittextplace {
-    grid-column: 2 /span 1;
-    grid-row: 1 / span 1;
-    display: flex;
-    margin-left: 4%;
-    margin-top: 10px;
-}
-
-.eventhittext {
-    color: white;
-    font-family: 'obviously-wide';
-    font-size: 2.5vw;
-    line-height: 0px;
-}
 
 
 .auswahl {
-    grid-column: 2 / span 2;
-    grid-row: 1 /span 1;
     display: grid;
-    grid-template-columns: 50% 10% 40%;
+    grid-template-columns: 57% 6% 37%;
     grid-template-rows: 1fr;
 }
 
 .deinvibeplace {
     z-index: 1;
-    grid-column: 1 / span 1;
-    grid-row: 1 / span 1;
     display: flex;
     justify-content: right;
-    align-items: end;
+    align-items: start;
+    
 }
 
 .deinvibebox {
     background-color: rgb(0, 0, 0);
-    width: 600px;
-    height: 300px;
+    width: 45vw;
+    height: 100%;
     border-radius: 5px;
     box-shadow: 0px 40px 30px -20px rgba(0, 0, 0, 0.3);
+
+
+    display: grid;
+    grid-template-columns: 0.32fr 1fr 1fr 1fr 0.32fr;
+    grid-template-rows: 23% 12% 65%;
 }
 
 .deinvibetext {
+    grid-column: 2 / span 3;
+    grid-row: 1 / span 1;
+
     color: white;
     font-family: 'obviously-wide';
-    font-size: 40px;
+    font-size: 2.5vw;
     text-align: center;
-    margin-top: 10px;
+    margin: 0;
 
-}
-
-.auswahltype {
-    display: flex;
-    margin-top: -8%;
-    justify-content: space-around;
 }
 
 .musik {
+    grid-column: 2 / span 2;
     color: white;
     font-family: 'obviously-wide';
-    font-size: 20px;
+    font-size: 1.5vw;
+    margin: 0;
 }
 
 .was {
+    grid-column: 4 / span 1;
     color: white;
     font-family: 'obviously-wide';
-    font-size: 20px;
-    margin-left: 20%;
+    font-size: 1.5vw;
+    margin: 0;
 }
 
-.checkboxmusik ul {
-    margin-top: 2px;
-    margin-left: 4%;
+.checkboxmu{
+    grid-column: 2 / span 1;
+    grid-row: 3 / span 1;
 }
 
-.checkboxmusik li {
+.checkboxmu ul {
+    margin: 0;
+    margin-top: 10px;
+    padding: 0;
+    align-content: center;
+}
+
+.checkboxmu li {
     display: flex;
     flex-direction: column;
     color: white;
-    font-size: 11px;
+    font-size: 1vw;
     font-family: 'obviously-wide';
     list-style-type: none;
 }
 
-
-.checkboxmusik2 ul {
-    margin-top: -146px;
-    margin-left: 33%;
-    font-family: 'obviously-wide';
+.checkboxmu2 {
+    grid-column: 3 / span 1;
+    grid-row: 3 / span 1
 }
 
-.checkboxmusik2 li {
+.checkboxmu2 ul {
+    margin: 0;
+    margin-top: 10px;
+    padding: 0;
+}
+
+.checkboxmu2 li {
     display: flex;
     flex-direction: column;
     color: white;
-    font-size: 11px;
+    font-size: 1vw;
     font-family: 'obviously-wide';
     list-style-type: none;
 }
 
-
-.checkboxwas ul {
-    margin-top: -146px;
-    margin-left: 62%;
+.checkboxwa{
+    grid-column: 4 / span 1;
+    grid-row: 3 / span 1
 }
 
-.checkboxwas li {
+.checkboxwa ul {
+    margin: 0;
+    margin-top: 10px;
+    padding: 0;
+}
+
+.checkboxwa li {
     display: flex;
     flex-direction: column;
     color: white;
-    font-size: 11px;
+    font-size: 1vw;
     font-family: 'obviously-wide';
     list-style-type: none;
 }
@@ -179,27 +147,11 @@ h1 {
 
 
 .checkbox-container {
-    margin-bottom: 6px;
+    margin-bottom: 0.75vw;
 }
 
-.hitcenter {
-    grid-column: 2 /span 2;
-    grid-row: 1 / span 1;
-    display: flex;
-    justify-content: center;
-    align-items: start;
-    z-index: -7777;
-}
 
-.hit {
-    grid-column: 2 / span 13;
-    grid-row: 1 / span 1;
-    z-index: -2;
-    display: flex;
-    flex-wrap: wrap;
-    width: 1425px;
-    height: 300px;
-}
+
 
 
 
@@ -214,11 +166,17 @@ h1 {
 
     display: flex;
     justify-content: left;
-    align-items: end;
+    align-items: start;
 
 
 }
 
+.calendarmargin{
+    padding-bottom: 3px;
+    padding-top: 3px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
 
 
 .calendar {
@@ -226,10 +184,12 @@ h1 {
     justify-content: center;
     align-items: center;
     background: #000000;
-    padding: 10px;
+    
+   
+    
     width: 24vw;
-    height: 19vw;
-    border-radius: 5px;
+    height: 100%;
+    border-radius: 3px;
     box-shadow: 0px 40px 30px -20px rgba(0, 0, 0, 0.3);
 
     .month {
@@ -240,6 +200,8 @@ h1 {
         display: flex;
         justify-content: center;
         align-items: center;
+        padding-bottom: 10px;
+        padding-top: 10px;
 
         .year {
             font-weight: 600;
@@ -280,7 +242,7 @@ h1 {
             transition-duration: .2s;
             color: white;
 
-            
+
 
 
             &:hover {
@@ -294,7 +256,7 @@ h1 {
         }
     }
 
-    .dates button{
+    .dates button {
         padding: 0px;
     }
 }
