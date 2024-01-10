@@ -47,14 +47,14 @@ h1 {
     align-items: center;
 
     background-color: rgb(0, 0, 0);
-    width: 9vw;
-    height: 9vw;
+    width: 8vw;
+    height: 8vw;
 }
 
 .top {
     color: white;
-    font-family: 'medium', sans-serif;
-    font-size: 2vw;
+    font-family: 'obviously-wide';
+    font-size: 1.2vw;
     font-weight: bold;
     text-justify: center;
     text-align: center;
@@ -72,10 +72,9 @@ h1 {
 
 .eventhittext {
     color: white;
-    font-family: 'medium', sans-serif;
+    font-family: 'obviously-wide';
     font-size: 2.5vw;
     line-height: 0px;
-    letter-spacing: 2px;
 }
 
 
@@ -106,28 +105,28 @@ h1 {
 
 .deinvibetext {
     color: white;
-    font-family: 'medium', sans-serif;
+    font-family: 'obviously-wide';
     font-size: 40px;
     text-align: center;
-    margin-top: 30px;
+    margin-top: 10px;
 
 }
 
 .auswahltype {
     display: flex;
-    margin-top: -5%;
+    margin-top: -8%;
     justify-content: space-around;
 }
 
 .musik {
     color: white;
-    font-family: 'medium', sans-serif;
+    font-family: 'obviously-wide';
     font-size: 20px;
 }
 
 .was {
     color: white;
-    font-family: 'medium', sans-serif;
+    font-family: 'obviously-wide';
     font-size: 20px;
     margin-left: 20%;
 }
@@ -142,7 +141,7 @@ h1 {
     flex-direction: column;
     color: white;
     font-size: 11px;
-    font-family: 'medium', sans-serif;
+    font-family: 'obviously-wide';
     list-style-type: none;
 }
 
@@ -150,7 +149,7 @@ h1 {
 .checkboxmusik2 ul {
     margin-top: -146px;
     margin-left: 33%;
-    font-family: 'medium', sans-serif;
+    font-family: 'obviously-wide';
 }
 
 .checkboxmusik2 li {
@@ -158,14 +157,14 @@ h1 {
     flex-direction: column;
     color: white;
     font-size: 11px;
-    font-family: 'medium', sans-serif;
+    font-family: 'obviously-wide';
     list-style-type: none;
 }
 
 
 .checkboxwas ul {
     margin-top: -146px;
-    margin-left: 64%;
+    margin-left: 62%;
 }
 
 .checkboxwas li {
@@ -173,7 +172,7 @@ h1 {
     flex-direction: column;
     color: white;
     font-size: 11px;
-    font-family: 'medium', sans-serif;
+    font-family: 'obviously-wide';
     list-style-type: none;
 }
 
@@ -228,20 +227,16 @@ h1 {
     align-items: center;
     background: #000000;
     padding: 10px;
-    width: 70%;
-    height: 290px;
+    width: 80%;
+    height: 280px;
     border-radius: 5px;
     box-shadow: 0px 40px 30px -20px rgba(0, 0, 0, 0.3);
 
     .month {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
         font-size: 20px;
-        margin-bottom: 10px;
         font-weight: 300;
         color: white;
-        font-family: 'medium', sans-serif;
+        font-family: 'obviously-wide';
         display: flex;
         justify-content: center;
         align-items: center;
@@ -257,15 +252,12 @@ h1 {
     }
 
     .days {
-        display: grid;
-        grid-template-columns: repeat(7, 1fr);
-
+    
         display: flex;
         justify-content: space-between;
 
         color: #ffffff;
-        font-family: 'medium', sans-serif;
-        font-weight: 600;
+        font-family: 'obviously-wide';
         font-size: 14px;
         margin-bottom: 0px;
     }
@@ -279,12 +271,12 @@ h1 {
             outline: 0;
             border: 0;
             background-color: transparent;
-            font-family: 'medium', sans-serif;
-            font-size: 12px;
+            font-family: 'obviously-wide';
+            font-size: 1.2vw;
             justify-self: center;
             align-self: center;
-            width: 30px;
-            height: 30px;
+            width: 2.5vw;
+            height: 2.5vw;
             margin: 4px;
             transition-duration: .2s;
             color: white;
@@ -336,7 +328,7 @@ h1 {
 .bars h2,
 .bars h3 {
     margin: 0px;
-    font-family: 'medium', sans-serif;
+    font-family: 'obviously-wide';
 
 }
 
@@ -350,16 +342,16 @@ h1 {
 
     writing-mode: vertical-rl;
     transform: rotate(180deg);
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 1.7vw;
+    font-size: 1.69vw;
 
 }
 
 .date {
     margin-left: 0px;
     color: white;
-    font-family: 'medium', sans-serif;
+    font-family: 'obviously-wide';
 }
+
 
 
 
@@ -383,21 +375,19 @@ h1 {
     margin-bottom: 0px;
     margin-top: 0px;
     object-fit: cover;
-    margin-bottom: 10px;
 }
 
 .ortschaft {
     font-weight: lighter;
-    font-size: 1vw;
+    font-size: 1.1vw;
     color: white;
-    padding-bottom: 10px;
+    margin: 0px;
 
 
 }
 
 .eventtitel {
-    font-size: 2vw;
-    padding-bottom: 10px;
+    font-size: 2.05vw;
     font-weight: bold;
     color: white;
 
@@ -405,20 +395,20 @@ h1 {
 
 .musicstyle {
     font-size: 1.5vw;
-    padding-bottom:10px;
+    padding-bottom:25px;
     color: white;
 }
 
 .preis {
-    font-size: 0.8vw;
+    font-size: 1vw;
     margin-top: 200px;
     color: white;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
 }
 
 
 .alter {
-    font-size: 0.8vw;
+    font-size: 0.9vw;
     color: white;
     padding-bottom: 30px;
 }
