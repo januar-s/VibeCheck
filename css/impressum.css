@@ -1,8 +1,18 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
 body {
     
     background-image: url(/images/Hintergrund.png);
     background-size: 100% 9000px;
     background-position: center;
+    display: grid;
+    grid-template-columns: 40px repeat(12, 1fr) 40px;
+    grid-template-rows: repeat(30, 100px);
+
 }
 
 h1 {
@@ -36,7 +46,21 @@ p {
     color: white;
 }
 
+
+
+#impressum {
+    grid-area: 2 / 2 / span 10 / span 11;
+}
+
+#Datenschutz {
+    grid-area: 12 / 2 / span 7 / span 11;
+}
+
+#Fragen {
+    grid-area: 24 / 2 / span 2 / span 11;
+}
+
 footer {
     grid-column: 1 / span 14;
-    grid-row: 26 / span 4;
+    grid-row: 27 / span 4;
 }
