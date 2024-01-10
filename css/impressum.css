@@ -6,15 +6,19 @@ body, html {
 
 body {
     background-image: url(/images/Hintergrund.png);
-    background-size: 100% 9000px;
-    background-position: center;
-    display: grid;
-    grid-template-columns: 40px repeat(12, 1fr) 40px;
-    grid-template-rows: repeat(34, 100px);
     background-size: auto 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+}
+
+main {
+    min-width: fit-content;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 40px repeat(12, 1fr) 40px;
+    grid-template-rows: repeat(34, 100px);
+
 }
 
 h1 {
@@ -63,6 +67,9 @@ p {
 footer {
     grid-column: 1 / span 14;
     grid-row: 31 / span 4;
+    p{
+        font-size: 13px;
+    }
 }
 
 @media screen and (max-width: 1000px) {}
