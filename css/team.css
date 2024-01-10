@@ -6,11 +6,7 @@ html {
 }
 
 body {
-    min-width: fit-content;
     width: 100%;
-    display: grid;
-    grid-template-columns: 40px repeat(12, 1fr) 40px;
-    grid-template-rows: repeat(25, 100px);
     background-image: url(/images/Hintergrund.png);
     background-size: auto 100%;
     background-position: center;
@@ -19,8 +15,9 @@ body {
 }
 
 main {
-    grid-column: 2 / span 12;
-    padding: 20px;
+    display: grid;
+    grid-template-columns: 40px repeat(12, 1fr) 40px;
+    grid-template-rows: repeat(9, 100px) repeat(1fr, 4);
 }
 
 p{
@@ -29,139 +26,169 @@ p{
     font-family: 'obviously-wide';
 }
 
-h1 {
+.titel{
+    grid-column: 4 / span 8;
+    grid-row: 1 / span 2;
     margin: 0px;
+    padding: 0;
     text-align: center;
-    font-size: 145px;
+    text-justify: start;
+    font-size: 6vw;
     color: white;
     font-family: 'cheee-wowie', sans-serif;
 }
+h1{
+    margin: 0;
+    margin-top: 45px;
+}
 
 .gruppenfoto {
-    height: 550px;
+    grid-column: 2 / span 12;
+    height: 500px;
     width: 100%;
     object-fit: cover;
     object-position: top center;
 }
 
 h2{
+    grid-column: 3 / span 10;
+    grid-row: 8 / span 2;
     text-align: center;
-    font-size: 35px;
+    font-size: 2vw;
     color: white;
     font-family: 'obviously-wide';
 }
 
-.team{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 100px;
+
+.teamContainer{
+    justify-self: center;
+}
+.teamWrap{
+    width: 93%;
     position: relative;
 }
 
-.portraitbild{
-    width: 300px;
-    height: auto;
+.team{
+    grid-column: 2 / span 12;
+    grid-row: 10 / span 1;   
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
-
+.portraitbild{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.portraitbildback{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
 #backImgJan{
     position: absolute;
     left: 0;
     top: 0;
     opacity: 0;
 }
-
 #backImgJan:hover{
     opacity: 1;
 }
-
 #backImgWera{
     position: absolute;
+    left: 0;
+    top: 0;
     opacity: 0;
 }
-
 #backImgWera:hover{
     opacity: 1;
 }
-
 #backImgNicole{
     position: absolute;
+    left: 0;
+    top: 0;
     opacity: 0;
 }
-
 #backImgNicole:hover{
     opacity: 1;
 }
-
 #backImgStefi{
     position: absolute;
+    left: 0;
+    top: 0;
     opacity: 0;
 }
-
 #backImgStefi:hover{
     opacity: 1;
 }
 
 
-.teamElement{
-    text-align: center;
+.beschreibung{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
-
-
-
-.textli{
-    text-align: center;
-    margin-left: 30px;
-    margin-right: 30px;
-}
-
 
 h3{
     color: white;
     font-family: 'cheee-wowie', sans-serif;
     font-size: 25px;
-    margin: 10px;
-    line-height: 5px;
+    align-self: flex-start;
+    margin: 0;
 }
-
 h4{
     color: white;
     font-family: 'obviously-wide';
     font-size: 15px;
-    font-weight: lighter;
+    align-self: flex-end;
+    margin: 0;
 }
 
+details{
+    display: flex;
+}
 summary{
     color: white;
     font-family: 'obviously-wide';
     font-size: 12px;
-    line-height: 5px;
     cursor: pointer;
 }
-
 summary:hover{
     color: #f1009d;
 }
 
+.textli{
+    text-align: justify;
+}
 
 
 
-#teamDu{
+
+
+
+
+.du{
     display: flex;
     flex-direction: row;
-    margin-top: 80px;
+    grid-column: 2 / span 12;
+    grid-row: 15 /span 6;
+    padding-bottom: 60px;
 }
 #textDu, #funktionDu, #nameDu{
     text-align: center;
 }
-#bildDu{
-    align-items: center;
+
+
+.bildDu{
+    display: flex;
+    justify-content: center;
+    grid-column: 5 / span 6;
+    padding-top: 80px;
 }
-.duBild{
-    width: 500px;
+#dubild{
+    width: 33%;
     height: auto;
-    margin-left: 450px;
 }
 #duDatenschutz{
     color: rgba(255, 255, 255, 0.752);
@@ -169,6 +196,7 @@ summary:hover{
     font-size: 12px;
     text-align: center;
 }
+
 .button {
     background-color: rgba(255, 255, 255, 0.731);
     border: none;
@@ -179,47 +207,58 @@ summary:hover{
     display: inline-block;
     font-family:  'obviously-wide';
     font-size: 8px;
-    margin-top: 10px;
-    margin-left: 635px;
-    }
-    
+}
 
-#geschichte{
+
+
+.geschichte {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    grid-column: 2/span 12;
+    grid-row: 21 / span 1;
+}
+#geschichtetitel {
     font-family: 'cheee-wowie', sans-serif;
     font-size: 50px;
     color: white;
     writing-mode: vertical-rl;
     transform: rotate(180deg);
-}
-#infosGeschichte{
-    display: flex;
 }
 #textGeschichte{
-    margin-left: 30px;
-    margin-top: 300px;
+    margin-top: 245px;
 }
 
-#mission{
+
+.mission{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    grid-column: 2/span 12;
+    grid-row: 22 / span 1;
+    padding-top: 60px;
+}
+#missiontitel {
     font-family: 'cheee-wowie', sans-serif;
     font-size: 50px;
     color: white;
     writing-mode: vertical-rl;
     transform: rotate(180deg);
 }
-#infosMission{
-    display: flex;
-    margin-bottom: 60px;
-}
 #textMission{
-    margin-left: 30px;
-    margin-top: 300px;
+    margin-top: 55px;
 }
 
-#infosWerte{
+
+.werte{
     display: flex;
     flex-direction: column;
+    grid-column: 5 / span 6; 
+    grid-row: 23 / span 1;
 }
-#werte{
+
+#wertetitel{
     font-family: 'cheee-wowie', sans-serif;
     font-size: 50px;
     color: white;
@@ -235,7 +274,7 @@ summary:hover{
     text-align: center;
 }
 #benutzerfreundlichText{
-    text-align: center;
+    text-align: justify;
 }
 
 #respekt{
@@ -247,7 +286,7 @@ summary:hover{
     text-align: center;
 }
 #respektText{
-    text-align: center;
+    text-align: justify;
 }
 
 #vielfalt{
@@ -259,7 +298,7 @@ summary:hover{
     text-align: center;
 }
 #vielfaltText{
-    text-align: center;
+    text-align: justify;
 }
 
 #gemeinschaft{
@@ -271,10 +310,24 @@ summary:hover{
     text-align: center;
 }
 #gemeinschaftText{
-    text-align: center;
+    text-align: justify;
 }
 
 
+
+
+
+
+
+.video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-column: 5 / span 6;
+    grid-row: 24 / span 1;
+    padding-bottom: 60px;
+    justify-content: center; 
+}
 #titelVideo{
     font-size: 50px;
     color: white;
@@ -286,14 +339,19 @@ summary:hover{
     line-height: 70px;
     margin-bottom: 0px;
 }
-#videoButton{
-    text-align: center;
+
+.videovideo {
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+}
+
+#videoButton {
     padding-bottom: 40px;
+    text-align: center;
 }
-#videoSource{
-    margin-left: 495px;
-    padding-bottom: 20px;
-}
+
+
 
 
 
