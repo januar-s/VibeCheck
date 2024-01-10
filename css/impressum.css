@@ -5,23 +5,21 @@ body, html {
 }
 
 body {
-    
     background-image: url(/images/Hintergrund.png);
     background-size: 100% 9000px;
     background-position: center;
     display: grid;
     grid-template-columns: 40px repeat(12, 1fr) 40px;
-    grid-template-rows: repeat(29, 100px);
+    grid-template-rows: repeat(34, 100px);
     background-size: auto 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-
 }
 
 h1 {
     font-family: 'cheee-wowie', sans-serif;
-    font-size: 60px;
+    font-size: 4vw;
     margin: 0px;
     margin-bottom: 10px;
     margin-top: 10px;
@@ -31,7 +29,7 @@ h1 {
 h2 {
     font-family: 'obviously-wide', sans-serif;
     font-weight: 700;
-    font-size: 23px;
+    font-size: 1.5vw;
     margin: 0px;
     margin-bottom: -10px;
     color: white;
@@ -40,7 +38,7 @@ h2 {
 
 p {
     font-family: 'obviously-wide', sans-serif;
-    font-size: 14px;
+    font-size: 1vw;
     margin-top: 15px;
     margin-left: 0px;
     padding-top: 0px;
@@ -51,18 +49,23 @@ p {
 
 
 #impressum {
-    grid-area: 2 / 3 / span 10 / span 9;
+    grid-area: 2 / 3 / span 8 / span 9;
 }
 
 #Datenschutz {
-    grid-area: 11 / 3 / span 7 / span 9;
+    grid-area: 13 / 3 / span 9 / span 9;
 }
 
 #Fragen {
-    grid-area: 23 / 3 / span 2 / span 9;
+    grid-area: 28 / 3 / span 2 / span 9;
 }
 
 footer {
     grid-column: 1 / span 14;
-    grid-row: 26 / span 4;
+    grid-row: 31 / span 4;
 }
+
+@media screen and (max-width: 1000px) {}
+
+
+@media screen and (max-width: 657px) {}

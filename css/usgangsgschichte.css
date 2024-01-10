@@ -1,34 +1,41 @@
 body {
-    
     background-image: url(/images/Hintergrund.png);
     background-size: 100% 9000px;
     background-position: center;
+    display: grid;
+    grid-template-columns: 40px repeat(12, 1fr) 40px;
+    grid-template-rows: repeat(34, 100px);
+    background-size: auto 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#usgangsgschichte {
+    grid-area: 2 / 3 / span 8 / span 9;
 }
 
 h1 {
     font-family: 'cheee-wowie', sans-serif;
-    font-size: 60px;
+    font-size: 4vw;
     margin: 0px;
+    margin-bottom: 10px;
+    margin-top: 10px;
     color: white;
 }
 
 h2 {
-    font-family: 'cheee-wowie', sans-serif;
-    font-size: 45px;
+    font-family: 'obviously-wide', sans-serif;
+    font-weight: 700;
+    font-size: 1.5vw;
     margin: 0px;
-    color: white;
-}
-
-h3 {
-    font-family: 'cheee-wowie', sans-serif;
-    font-size: 30px;
-    margin: 0%;
+    margin-bottom: -10px;
     color: white;
 }
 
 p {
-    font-family: 'obviously-wide';
-    font-size: 14px;
+    font-family: 'obviously-wide', sans-serif;
+    font-size: 1vw;
     margin-top: 15px;
     margin-left: 0px;
     padding-top: 0px;

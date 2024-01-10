@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Kontakt</title>
     <link rel="stylesheet" href="css/allgemein.css">
     <link rel="stylesheet" href="css/kontakt.css">
     <link rel="stylesheet" href="https://use.typekit.net/tsi8idv.css">
@@ -58,14 +58,24 @@
         </div>
     </header>
 
-    <h1>Kontaktformular</h1>
+    <section class="text">
+    <h1>Kontakt</h1>
+    <h2>Unsere Kontaktangaben</h2>
+    <p> VibeCheck GmbH <br>
+        Holzikofenweg 8 <br>
+        3007 Bern <br>
+        info@vibecheck.ch <br>
+        +41 31 654 32 10 </p> <br>
+    </section>
 
-    <p>Du hast ein Anliegen, Frage oder willst uns deine "Usgangsgschicht" für den Podcast zusenden? Nur zu! Wir freuen uns mega auf deine Kontaktaufnahme! <br>
-    Wir versuchen, dir so schnell wie möglich zu antworten. Bitte beachte, dass du mit der Einsendung deiner "Usgangsgschicht" automatisch zustimmst, dass wir sie in unserem Podcast erzählen dürfen.
-    
-    </p>
-
-    <form action="/dein-serverseitiger-endpunkt" method="post">
+    <section class="formular">
+    <h2>Kontaktformular</h2>
+    <p>Du hast ein Anliegen, Frage oder willst uns deine "Usgangsgschicht" für den Podcast zusenden? Nur zu! <br> 
+        Wir freuen uns mega auf deine Kontaktaufnahme und versuchen, dir so schnell wie möglich zu antworten. <br> <br>
+        Bitte beachte, dass du mit der Einsendung deiner "Usgangsgschicht" automatisch zustimmst, dass wir sie in unserem Podcast erzählen dürfen.
+        </p> <br>
+   
+    <form action="/dein-serverseitiger-endpunkt" method="post" class="form">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required>
 
@@ -93,6 +103,9 @@
             document.getElementById("successMessage").style.display = "block";
         }
     </script>
+</section>
+
+
 </body>
 <footer>
 
