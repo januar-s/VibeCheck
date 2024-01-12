@@ -35,7 +35,8 @@ header {
     width: 30px;
 }
 
-a {
+
+li{
     text-decoration: none;
     color: white;
     transition: color 0.3s ease;
@@ -138,7 +139,7 @@ a {
 #menu {
     position: absolute;
     width: 300px;
-    height: 1000px;
+    height: auto;
     margin: -100px 0 0 0;
     padding: 50px;
     padding-top: 125px;
