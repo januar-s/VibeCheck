@@ -241,7 +241,7 @@ footer {
     grid-column: 2 / span 1;
 
     display: flex;
-    align-items: left;
+    align-items: start;
     flex-direction: column;
 
     font-family: 'obviously-wide';

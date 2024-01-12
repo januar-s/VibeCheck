@@ -193,74 +193,68 @@ h1 {
     border-radius: 3px;
     box-shadow: 0px 40px 30px -20px rgba(0, 0, 0, 0.3);
 
-    .month {
-        font-size: 1.3vw;
-        font-weight: 300;
-        color: white;
-        font-family: 'obviously-wide';
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding-bottom: 10px;
-        padding-top: 10px;
-
-        .year {
-            font-weight: 600;
-            margin-left: 10px;
-        }
-
-        &:hover {
-            background-color: #969696;
-        }
-    }
-
-    .days {
-
-        display: flex;
-        justify-content: space-between;
-
-        color: #ffffff;
-        font-family: 'obviously-wide';
-        font-size: 1vw;
-        margin-bottom: 0px;
-    }
-
-    .dates {
-        display: grid;
-        grid-template-columns: repeat(7, 1fr);
-
-
-        .slay {
-            cursor: pointer;
-            outline: 0;
-            border: 0;
-            background-color: transparent;
-            font-family: 'obviously-wide';
-            font-size: 1.2vw;
-            width: 2.5vw;
-            height: 2.5vw;
-            margin: 3px;
-            transition-duration: .2s;
-            color: white;
-
-
-
-
-            &:hover {
-                background-color: #969696;
-            }
-
-            &:focus {
-                background: #ffffff;
-                color: #0e0e0e;
-            }
-        }
-    }
-
-    .dates button {
-        padding: 0px;
-    }
 }
+
+
+.month {
+    font-size: 1.3vw;
+    font-weight: 300;
+    color: white;
+    font-family: 'obviously-wide';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.month .year {
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+.days {
+    display: flex;
+    justify-content: space-between;
+    color: #ffffff;
+    font-family: 'obviously-wide';
+    font-size: 1vw;
+    margin-bottom: 0px;
+}
+
+.dates {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.dates .slay {
+    cursor: pointer;
+    outline: 0;
+    border: 0;
+    background-color: transparent;
+    font-family: 'obviously-wide';
+    font-size: 1.2vw;
+    width: 2.5vw;
+    height: 2.5vw;
+    margin: 3px;
+    transition-duration: .2s;
+    color: white;
+}
+
+.dates .slay:hover {
+    background-color: #969696;
+}
+
+.dates .slay:focus {
+    background: #ffffff;
+    color: #0e0e0e;
+}
+
+/* Additional style for buttons inside .dates */
+.dates button {
+    padding: 0px;
+}
+
 
 input[type="checkbox" i] {
     width: 1.2vw;
@@ -474,7 +468,7 @@ a {
     padding: 7px;
     font-size: 1.2vw;
     font-family: 'obviously-wide';
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
 }
 
 .abinusgang:hover {
@@ -497,7 +491,7 @@ a {
     .deinvibeplace {
         display: flex;
         display: grid;
-        grid-template-columns: 1fr 6fr 1fr;
+        grid-template-columns: 0.6fr 6fr 0.6fr;
         grid-template-rows: 1fr;
     }
 
@@ -624,9 +618,6 @@ a {
         height: 27vw;
     }
 
-
-
-
     .blechtwo {
         grid-column: 2 / span 1;
         grid-row: 1 / span 1;
@@ -661,75 +652,68 @@ a {
         transition: height .4s ease;
         position: relative;
 
+    }
 
+    .month {
+        font-size: 2.5vw;
+        color: white;
+        font-family: 'obviously-wide';
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 10px;
+        padding-top: 10px;
 
+    }
 
-        .month {
-            font-size: 2.5vw;
-            color: white;
-            font-family: 'obviously-wide';
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding-bottom: 10px;
-            padding-top: 10px;
+    .month .year {
+        margin-left: 10px;
+    }
 
-            .year {
-                margin-left: 10px;
-            }
+    .days {
 
-        }
+        display: flex;
+        justify-content: space-between;
 
-        .days {
+        color: #ffffff;
+        font-family: 'obviously-wide';
+        font-size: 2vw;
+        margin-bottom: 10px;
+    }
 
-            display: flex;
-            justify-content: space-between;
+    .dates {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+    }
 
-            color: #ffffff;
-            font-family: 'obviously-wide';
-            font-size: 2vw;
-            margin-bottom: 5px;
-        }
+    .dates .slay {
+        cursor: pointer;
+        outline: 0;
+        border: 0;
+        background-color: transparent;
+        font-family: 'obviously-wide';
+        font-size: 1.8vw;
+        width: 4.8vw;
+        height: 2.8vw;
+        margin: 3px;
+        transition-duration: .2s;
+        color: white;
+    }
 
-        .dates {
-            display: grid;
-            grid-template-columns: repeat(7, 1fr);
+    .dates .slay:hover {
+        background-color: #969696;
+    }
 
+    .dates .slay:focus {
+        background: #ffffff;
+        color: #0e0e0e;
+    }
 
-            .slay {
-                cursor: pointer;
-                outline: 0;
-                border: 0;
-                background-color: transparent;
-                font-family: 'obviously-wide';
-                font-size: 1.8vw;
-                width: 4vw;
-                height: 2.8vw;
-                margin: 3px;
-                transition-duration: .2s;
-                color: white;
-
-
-
-
-                &:hover {
-                    background-color: #969696;
-                }
-
-                &:focus {
-                    background: #ffffff;
-                    color: #0e0e0e;
-                }
-            }
-        }
-
-        .dates button {
-            display: flex;
-            align-items: end;
-            justify-content: center;
-            padding: 0px;
-        }
-
+    .dates button {
+        display: flex;
+        align-items: end;
+        justify-content: center;
+        padding: 0px;
     }
 
     .calendarmargin {
@@ -757,285 +741,12 @@ a {
         background: white;
     }
 
-    .auswahl {
-        display: none;
-    }
-
-    .auswahlsmall {
-        display: block;
-    }
-
-    .deinvibeplace {
-        display: flex;
-        display: grid;
-        grid-template-columns: 0.6fr 6fr 0.6fr;
-        grid-template-rows: 1fr;
-    }
-
-    .blech {
-        grid-column: 2 / span 1;
-        grid-row: 1 / span 1;
-    }
-
-    .vibebutton {
-
-        background-color: rgb(0, 0, 0);
-        height: 100%;
-        border-radius: 5px;
-        padding: 30px;
-        cursor: pointer;
-        display: block;
-        color: white;
-        font-family: 'obviously-wide';
-        font-size: 2.5vw;
-    }
-
-    .vibebutton::after {
-        float: right;
-        right: 10%;
-        content: "+";
-    }
-
-    .deinvibebox {
-        clear: both;
-        width: 100%;
-        height: 0px;
-        overflow: hidden;
-        transition: height .4s ease;
-        position: relative;
-        display: grid;
-        grid-template-columns: 0.32fr 1fr 1fr 1fr 0.32fr;
-        grid-template-rows: 14% 1% 85%;
-    }
-
-    .musik {
-        grid-column: 2 / span 2;
-        color: white;
-        font-family: 'obviously-wide';
-        font-size: 2.5vw;
-        margin: 0;
-    }
-
-    .was {
-        grid-column: 4 / span 1;
-        color: white;
-        font-family: 'obviously-wide';
-        font-size: 2.5vw;
-        margin: 0;
-    }
-
-    .checkboxmu {
-        grid-column: 2 / span 1;
-        grid-row: 2 / span 1;
-    }
-
-    .checkboxmu ul {
-        margin: 0;
-        margin-top: 10px;
-        padding: 0;
-        align-content: center;
-    }
-
-    .checkboxmu li {
-        display: flex;
-        flex-direction: column;
-        color: white;
-        font-size: 2vw;
-        font-family: 'obviously-wide';
-        list-style-type: none;
-    }
-
-    .checkboxmu2 {
-        grid-column: 3 / span 1;
-        grid-row: 3 / span 1
-    }
-
-    .checkboxmu2 ul {
-        margin: 0;
-        margin-top: 10px;
-        padding: 0;
-    }
-
-    .checkboxmu2 li {
-        display: flex;
-        flex-direction: column;
-        color: white;
-        font-size: 2vw;
-        font-family: 'obviously-wide';
-        list-style-type: none;
-    }
-
-    .checkboxwa {
-        grid-column: 4 / span 1;
-        grid-row: 3 / span 1
-    }
-
-    .checkboxwa ul {
-        margin: 0;
-        margin-top: 10px;
-        padding: 0;
-    }
-
-    .checkboxwa li {
-        display: flex;
-        flex-direction: column;
-        color: white;
-        font-size: 2vw;
-        font-family: 'obviously-wide';
-        list-style-type: none;
-    }
-
-
-    #touch {
-        position: absolute;
-        opacity: 0;
-        height: 0px;
-    }
-
-    #touch:checked+.deinvibebox {
-        height: 27vw;
-    }
-
-
-
-
-
-
-
     .kalender {
         margin-top: 10px;
         display: grid;
         grid-template-columns: 0.6fr 6fr 0.6fr;
         grid-template-rows: 1fr;
     }
-
-    .blechtwo {
-        grid-column: 2 / span 1;
-        grid-row: 1 / span 1;
-    }
-
-    .kalenderbutton {
-
-        background-color: rgb(0, 0, 0);
-        height: 100%;
-        border-radius: 5px;
-        padding: 30px;
-        cursor: pointer;
-        display: block;
-        color: white;
-        font-family: 'obviously-wide';
-        font-size: 2.5vw;
-    }
-
-    .kalenderbutton::after {
-        float: right;
-        right: 10%;
-        content: "+";
-    }
-
-    .calendar {
-        grid-template-columns: 1.2fr 2fr;
-
-        clear: both;
-        width: 100%;
-        height: 0px;
-        overflow: hidden;
-        transition: height .4s ease;
-        position: relative;
-
-
-
-
-        .month {
-            font-size: 2.5vw;
-            color: white;
-            font-family: 'obviously-wide';
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding-bottom: 10px;
-            padding-top: 10px;
-
-            .year {
-                margin-left: 10px;
-            }
-
-        }
-
-        .days {
-
-            display: flex;
-            justify-content: space-between;
-
-            color: #ffffff;
-            font-family: 'obviously-wide';
-            font-size: 2vw;
-            margin-bottom: 10px;
-        }
-
-        .dates {
-            display: grid;
-            grid-template-columns: repeat(7, 1fr);
-
-
-            .slay {
-                cursor: pointer;
-                outline: 0;
-                border: 0;
-                background-color: transparent;
-                font-family: 'obviously-wide';
-                font-size: 1.8vw;
-                width: 4.8vw;
-                height: 2.8vw;
-                margin: 3px;
-                transition-duration: .2s;
-                color: white;
-
-
-
-
-                &:hover {
-                    background-color: #969696;
-                }
-
-                &:focus {
-                    background: #ffffff;
-                    color: #0e0e0e;
-                }
-            }
-        }
-
-        .dates button {
-            display: flex;
-            align-items: end;
-            justify-content: center;
-            padding: 0px;
-        }
-
-    }
-
-    .calendarmargin {
-        width: 70%;
-        justify-self: center;
-        padding-bottom: 3px;
-        padding-top: 3px;
-        padding-right: 10px;
-        padding-left: 10px;
-    }
-
-    #touchtwo {
-        position: absolute;
-        opacity: 0;
-        height: 0px;
-    }
-
-    #touchtwo:checked+.calendar {
-        height: 27vw;
-    }
-
-
-
-
 
     .bars {
         display: flex;
@@ -1102,11 +813,6 @@ a {
         color: white;
     }
 
-
-
-
-
-
     .popup4,
     .popup3,
     .popup2,
@@ -1158,7 +864,7 @@ a {
         height: 20vw;
     }
 
-    
+
 
     .ortschaftpop {
         font-weight: lighter;
@@ -1198,10 +904,16 @@ a {
         padding: 7px;
         font-size: 1.7vw;
         font-family: 'obviously-wide';
-        color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
     }
 
 }
+
+
+
+
+
+
 
 @media only screen and (max-width: 768px) {
 
@@ -1350,9 +1062,6 @@ a {
         height: auto;
     }
 
-
-
-
     .kalender {
         margin-top: 10px;
         display: flex;
@@ -1393,78 +1102,70 @@ a {
         height: 0px;
         overflow: hidden;
         transition: height .4s ease;
-        position: relative;
+        position: relative;    
 
+    }
 
+    .month {
+        font-size: 3vw;
+        color: white;
+        font-family: 'obviously-wide';
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
 
+    .month .year {
+        margin-left: 10px;
+        font-size: 3vw;
+    }
 
-        .month {
-            font-size: 2.5vw;
-            color: white;
-            font-family: 'obviously-wide';
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding-bottom: 10px;
-            padding-top: 10px;
+    .days {
 
-            .year {
-                margin-left: 10px;
-                font-size: 2.5;
-            }
+        display: flex;
+        justify-content: space-between;
 
-        }
+        color: #ffffff;
+        font-family: 'obviously-wide';
+        font-size: 2vw;
+        margin-bottom: 5px;
+    }
 
-        .days {
+    .dates {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+    }
 
-            display: flex;
-            justify-content: space-between;
+    .dates .slay {
+        cursor: pointer;
+        outline: 0;
+        border: 0;
+        background-color: transparent;
+        font-family: 'obviously-wide';
+        font-size: 1.8vw;
+        width: 4vw;
+        height: 2.8vw;
+        margin: 3px;
+        transition-duration: .2s;
+        color: white;
+    }
 
-            color: #ffffff;
-            font-family: 'obviously-wide';
-            font-size: 2vw;
-            margin-bottom: 5px;
-        }
+    .dates .slay:hover {
+        background-color: #969696;
+    }
 
-        .dates {
-            display: grid;
-            grid-template-columns: repeat(7, 1fr);
+    .dates .slay:focus {
+        background: #ffffff;
+        color: #0e0e0e;
+    }
 
-
-            .slay {
-                cursor: pointer;
-                outline: 0;
-                border: 0;
-                background-color: transparent;
-                font-family: 'obviously-wide';
-                font-size: 1.8vw;
-                width: 4vw;
-                height: 2.8vw;
-                margin: 3px;
-                transition-duration: .2s;
-                color: white;
-
-
-
-
-                &:hover {
-                    background-color: #969696;
-                }
-
-                &:focus {
-                    background: #ffffff;
-                    color: #0e0e0e;
-                }
-            }
-        }
-
-        .dates button {
-            display: flex;
-            align-items: end;
-            justify-content: center;
-            padding: 0px;
-        }
-
+    .dates button {
+        display: flex;
+        align-items: end;
+        justify-content: center;
+        padding: 0px;
     }
 
     .calendarmargin {
@@ -1605,8 +1306,6 @@ a {
         height: 30vw;
     }
 
-    
-
     .ortschaftpop {
         padding-top: 1vw;
         font-weight: lighter;
@@ -1647,7 +1346,7 @@ a {
         background-color: rgb(68, 15, 73);
         font-size: 2.5vw;
         font-family: 'obviously-wide';
-        color: rgb(0, 0, 0);
+        color: rgb(248, 248, 248);
     }
 
 }
