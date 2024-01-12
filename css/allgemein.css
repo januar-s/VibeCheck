@@ -21,6 +21,8 @@ header {
     z-index: 9999;
 }
 
+
+
 .header-left img {
     width: 70px;
 }
@@ -35,10 +37,15 @@ header {
     width: 30px;
 }
 
+header a {
 
-li{
-    text-decoration: none;
     color: white;
+    text-decoration: none;
+
+}
+
+li {
+    text-decoration: none;
     transition: color 0.3s ease;
 }
 
@@ -160,6 +167,7 @@ li{
     padding: 10px 0;
     font-size: 18px;
     font-family: 'obviously-wide';
+    color: white;
 }
 
 /*
