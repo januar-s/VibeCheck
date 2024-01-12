@@ -94,7 +94,6 @@ h1 {
     margin: 0;
     margin-top: 10px;
     padding: 0;
-    align-content: center;
 }
 
 .checkboxmu li {
@@ -355,9 +354,6 @@ input[type="checkbox" i] {
     font-weight: lighter;
     font-size: 1.1vw;
     color: white;
-    margin: 0px;
-
-
 }
 
 .eventtitel {
@@ -375,7 +371,6 @@ input[type="checkbox" i] {
 
 .preis {
     font-size: 1vw;
-    margin-top: 200px;
     color: white;
     padding-bottom: 5px;
 }
@@ -631,13 +626,6 @@ a {
 
 
 
-    .kalender {
-        margin-top: 10px;
-        display: flex;
-        display: grid;
-        grid-template-columns: 1fr 6fr 1fr;
-        grid-template-rows: 1fr;
-    }
 
     .blechtwo {
         grid-column: 2 / span 1;
@@ -916,7 +904,6 @@ a {
 
     .kalender {
         margin-top: 10px;
-        display: flex;
         display: grid;
         grid-template-columns: 0.6fr 6fr 0.6fr;
         grid-template-rows: 1fr;
