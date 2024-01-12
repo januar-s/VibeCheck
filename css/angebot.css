@@ -41,7 +41,7 @@ h1 {
     display: flex;
     justify-content: right;
     align-items: start;
-    
+
 }
 
 .deinvibebox {
@@ -85,7 +85,7 @@ h1 {
     margin: 0;
 }
 
-.checkboxmu{
+.checkboxmu {
     grid-column: 2 / span 1;
     grid-row: 3 / span 1;
 }
@@ -126,7 +126,7 @@ h1 {
     list-style-type: none;
 }
 
-.checkboxwa{
+.checkboxwa {
     grid-column: 4 / span 1;
     grid-row: 3 / span 1
 }
@@ -173,7 +173,7 @@ h1 {
 
 }
 
-.calendarmargin{
+.calendarmargin {
     padding-bottom: 3px;
     padding-top: 3px;
     padding-right: 10px;
@@ -186,9 +186,9 @@ h1 {
     justify-content: center;
     align-items: center;
     background: #000000;
-    
-   
-    
+
+
+
     width: 24vw;
     height: 100%;
     border-radius: 3px;
@@ -266,7 +266,7 @@ h1 {
 input[type="checkbox" i] {
     width: 1.2vw;
     height: 1.2vw;
-    background:white;
+    background: white;
 }
 
 
@@ -324,7 +324,9 @@ input[type="checkbox" i] {
     font-family: 'obviously-wide';
 }
 
-
+.auswahlsmall {
+    display: none;
+}
 
 
 .product {
@@ -396,10 +398,11 @@ input[type="checkbox" i] {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #1f1f1f;
+    background-color: rgb(18, 1, 20);
     padding: 10px;
     border: 2px solid #000;
-    width: auto;
+    height: auto;
+    width: 70vw;
     z-index: 9999;
     display: none;
     color: white;
@@ -415,7 +418,7 @@ input[type="checkbox" i] {
     color: #fff;
     border: none;
     border-radius: 3px;
-    font-size: 20px;
+    font-size: 1.7vw;
 }
 
 a {
@@ -423,9 +426,6 @@ a {
     text-decoration: none;
 }
 
-a:hover {
-    color: #b0b0b0;
-}
 
 #popup4:target,
 #popup3:target,
@@ -434,30 +434,59 @@ a:hover {
     display: block;
 }
 
+.popuppic {
+    object-fit: cover;
+    object-position: bottom center;
+    width: 100%;
+    height: 20vw;
+}
+
 .popuptext {
-    font-size: 1.3vw;
+    font-size: 1.2vw;
+    padding-bottom: 3.1vw;
+}
+
+.ortschaftpop {
+    font-weight: lighter;
+    font-size: 1.5vw;
+    color: white;
+    margin: 0px;
+}
+
+.musicstylepop {
+    font-size: 2vw;
+    color: white;
+    padding-bottom: 2vw;
+}
+
+.preispop {
+    font-size: 0.9vw;
+    margin-top: 200px;
+    color: white;
+    padding-bottom: 0.2vw;
+}
+
+
+.alterpop {
+    font-size: 0.8vw;
+    color: white;
+    padding-bottom: 0px;
 }
 
 .abinusgang {
-    border: black solid 1px;
-    background-color: rgb(119, 119, 119);
-    padding: 5px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 10px;
-    font-size: 1.7vw;
-    font-family: 'medium', sans-serif;
-    color: rgb(255, 255, 255);
+    margin-top: 1vw;
+    background-color: rgb(68, 15, 73);
+    padding: 7px;
+    font-size: 1.2vw;
+    font-family: 'obviously-wide';
+    color: rgb(0, 0, 0);
 }
 
 .abinusgang:hover {
-    background-color: black;
-    color: white;
+    background-color: rgb(123, 54, 130);
 }
 
-.auswahlsmall {
-    display: none;
-}
+
 
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
@@ -737,7 +766,7 @@ a:hover {
     input[type="checkbox" i] {
         width: 2vw;
         height: 2vw;
-        background:white;
+        background: white;
     }
 
     .auswahl {
@@ -1086,6 +1115,11 @@ a:hover {
         color: white;
     }
 
+
+
+
+
+
     .popup4,
     .popup3,
     .popup2,
@@ -1094,17 +1128,90 @@ a:hover {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        background-color: #1f1f1f;
+        background-color: rgb(18, 1, 20);
         padding: 10px;
         border: 2px solid #000;
-        width: 70%;
+        height: auto;
+        width: 65vw;
         z-index: 9999;
         display: none;
         color: white;
     }
 
+    .exit-button {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        padding: 5px 10px;
+        cursor: pointer;
+        background-color: transparent;
+        color: #fff;
+        border: none;
+        border-radius: 3px;
+        font-size: 3vw;
+    }
+
+    a {
+        color: white;
+        text-decoration: none;
+    }
+
+
+    #popup4:target,
+    #popup3:target,
+    #popup2:target,
+    #popup1:target {
+        display: block;
+    }
+
+    .popuppic {
+        object-fit: cover;
+        object-position: bottom center;
+        width: 100%;
+        height: 20vw;
+    }
+
+    
+
+    .ortschaftpop {
+        font-weight: lighter;
+        font-size: 1.8vw;
+        color: white;
+        margin: 0px;
+    }
+
+    .musicstylepop {
+        font-size: 2.5vw;
+        color: white;
+        padding-bottom: 1.9vw;
+    }
+
     .popuptext {
+        font-size: 1.4vw;
+        padding-bottom: 1.3vw;
+    }
+
+    .preispop {
+        font-size: 1.25vw;
+        margin-top: 200px;
+        color: white;
+        padding-bottom: 0.6vw;
+    }
+
+
+    .alterpop {
+        font-size: 1.1vw;
+        color: white;
+
+    }
+
+    .abinusgang {
+        margin-top: 2vw;
+        background-color: rgb(68, 15, 73);
+        padding: 7px;
         font-size: 1.7vw;
+        font-family: 'obviously-wide';
+        color: rgb(0, 0, 0);
     }
 
 }
@@ -1137,12 +1244,12 @@ a:hover {
         background-color: rgb(0, 0, 0);
         height: 100%;
         border-radius: 5px;
-        padding: 30px;
+        padding: 20px;
         cursor: pointer;
         display: block;
         color: white;
         font-family: 'obviously-wide';
-        font-size: 2.5vw;
+        font-size: 4vw;
     }
 
     .vibebutton::after {
@@ -1158,24 +1265,26 @@ a:hover {
         overflow: hidden;
         transition: height .4s ease;
         position: relative;
-        grid-template-columns: 0.32fr 1fr 1fr 1fr 0.32fr;
-        grid-template-rows: 14% 1% 85%;
+        grid-template-columns: 0.3fr 1fr 1fr 1fr 0.3fr;
+        grid-template-rows: 6vw 1fr;
     }
 
 
     .musik {
         grid-column: 2 / span 2;
+        grid-row: 1 / span 1;
         color: white;
         font-family: 'obviously-wide';
-        font-size: 2.5vw;
+        font-size: 3.5vw;
         margin: 0;
     }
 
     .was {
         grid-column: 4 / span 1;
+        grid-row: 1 / span 1;
         color: white;
         font-family: 'obviously-wide';
-        font-size: 2.5vw;
+        font-size: 3.5vw;
         margin: 0;
     }
 
@@ -1187,6 +1296,7 @@ a:hover {
     .checkboxmu ul {
         margin: 0;
         margin-top: 10px;
+        margin-bottom: 10px;
         padding: 0;
         align-content: center;
     }
@@ -1202,12 +1312,13 @@ a:hover {
 
     .checkboxmu2 {
         grid-column: 3 / span 1;
-        grid-row: 3 / span 1
+        grid-row: 2 / span 1
     }
 
     .checkboxmu2 ul {
         margin: 0;
         margin-top: 10px;
+        margin-bottom: 10px;
         padding: 0;
     }
 
@@ -1222,12 +1333,13 @@ a:hover {
 
     .checkboxwa {
         grid-column: 4 / span 1;
-        grid-row: 3 / span 1
+        grid-row: 2 / span 1
     }
 
     .checkboxwa ul {
         margin: 0;
         margin-top: 10px;
+        margin-bottom: 10px;
         padding: 0;
     }
 
@@ -1247,10 +1359,11 @@ a:hover {
     }
 
     #touch:checked+.deinvibebox {
-        height: 27vw;
+        position: relative;
+        height: auto;
     }
 
-   
+
 
 
     .kalender {
@@ -1271,12 +1384,12 @@ a:hover {
         background-color: rgb(0, 0, 0);
         height: 100%;
         border-radius: 5px;
-        padding: 30px;
+        padding: 20px;
         cursor: pointer;
         display: block;
         color: white;
         font-family: 'obviously-wide';
-        font-size: 2.5vw;
+        font-size: 4vw;
     }
 
     .kalenderbutton::after {
@@ -1387,9 +1500,9 @@ a:hover {
     }
 
     input[type="checkbox" i] {
-        width: 2vw;
-        height: 2vw;
-        background:white;
+        width: 3vw;
+        height: 3vw;
+        background: white;
     }
 
     .bars {
@@ -1416,7 +1529,6 @@ a:hover {
         align-items: flex-end;
         margin-right: 0px;
         margin-top: 0px;
-        /* Sorry, this is an ugly hack */
 
         writing-mode: vertical-rl;
         transform: rotate(180deg);
@@ -1463,29 +1575,92 @@ a:hover {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        background-color: #1f1f1f;
+        background-color: rgb(18, 1, 20);
         padding: 10px;
         border: 2px solid #000;
-        width: 90%;
+        height: auto;
+        width: 85vw;
         z-index: 9999;
         display: none;
         color: white;
     }
 
-    .popuptext {
+    .exit-button {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        padding: 5px 10px;
+        cursor: pointer;
+        background-color: transparent;
+        color: #fff;
+        border: none;
+        border-radius: 3px;
+        font-size: 3vw;
+    }
+
+    a {
+        color: white;
+        text-decoration: none;
+    }
+
+
+    #popup4:target,
+    #popup3:target,
+    #popup2:target,
+    #popup1:target {
+        display: block;
+    }
+
+    .popuppic {
+        object-fit: cover;
+        object-position: bottom center;
+        width: 100%;
+        height: 30vw;
+    }
+
+    
+
+    .ortschaftpop {
+        padding-top: 1vw;
+        font-weight: lighter;
         font-size: 2.5vw;
+        color: white;
+        margin: 0px;
+    }
+
+    .musicstylepop {
+        font-size: 3.6vw;
+        color: white;
+        padding-bottom: 3.5vw;
+    }
+
+    .popuptext {
+        font-size: 2vw;
+        padding-bottom: 4vw;
+    }
+
+    .preispop {
+        font-size: 1.8vw;
+        color: white;
+        padding-bottom: 0.6vw;
+    }
+
+
+    .alterpop {
+        font-size: 1.7vw;
+        color: white;
+
     }
 
     .abinusgang {
-        border: black solid 1px;
-        background-color: rgb(119, 119, 119);
-        padding: 5px;
-        padding-left: 10px;
-        padding-right: 10px;
-        padding-top: 10px;
-        font-size: 3vw;
-        font-family: 'medium', sans-serif;
-        color: rgb(255, 255, 255);
+        margin-top: 4vw;
+        padding: 0.3vw;
+        padding-left: 1.5vw;
+        padding-right: 1.5vw;
+        background-color: rgb(68, 15, 73);
+        font-size: 2.5vw;
+        font-family: 'obviously-wide';
+        color: rgb(0, 0, 0);
     }
 
 }
