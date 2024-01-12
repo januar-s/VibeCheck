@@ -1,6 +1,6 @@
 const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
-document.querySelectorAll("#menu li").forEach(item => {
+document.querySelectorAll("#menu li a").forEach(item => {
   let interval = null;
   let originalText = item.textContent;
 

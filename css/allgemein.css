@@ -1,5 +1,5 @@
 html,
-body{
+body {
     max-width: 100%;
     overflow-x: hidden;
 }
@@ -21,6 +21,8 @@ header {
     z-index: 9999;
 }
 
+
+
 .header-left img {
     width: 70px;
 }
@@ -35,9 +37,15 @@ header {
     width: 30px;
 }
 
-a {
-    text-decoration: none;
+header a {
+
     color: white;
+    text-decoration: none;
+
+}
+
+li {
+    text-decoration: none;
     transition: color 0.3s ease;
 }
 
@@ -138,7 +146,7 @@ a {
 #menu {
     position: absolute;
     width: 300px;
-    height: 1000px;
+    height: auto;
     margin: -100px 0 0 0;
     padding: 50px;
     padding-top: 125px;
@@ -157,7 +165,9 @@ a {
 
 #menu li {
     padding: 10px 0;
-    font-size: 22px;
+    font-size: 18px;
+    font-family: 'obviously-wide';
+    color: white;
 }
 
 /*
@@ -169,11 +179,33 @@ a {
 }
 
 @media screen and (max-width: 768px) {
+
+
     #menu {
         transform: none;
         opacity: 0;
 
         transition: opacity 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+    }
+
+    #menu {
+        position: absolute;
+        width: 300px;
+        height: 1000px;
+        margin: -100px 0 0 0;
+        padding: 50px;
+        padding-top: 125px;
+        right: -100px;
+
+        background: rgb(27, 4, 33);
+        list-style-type: none;
+        -webkit-font-smoothing: antialiased;
+        /* to stop flickering of text in safari */
+
+        transform-origin: 0% 0%;
+        transform: translate(100%, 0);
+
+        transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
     }
 }
 
@@ -187,8 +219,8 @@ a {
 footer {
     display: grid;
     grid-template-columns: 110px 1fr 1fr 110px;
-    grid-template-rows: 1fr 1fr;
-    padding: 20px;
+    grid-template-rows: 1fr 150px;
+    padding: 0px;
     background: rgba(21, 6, 40, 0.6);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(4.4px);
@@ -197,10 +229,12 @@ footer {
 }
 
 .titeladresse {
-    font-family: 'medium', sans-serif;
+    font-family: 'obviously-wide';
     font-weight: bold;
     font-size: 25px;
-    margin-bottom: 20px;
+    color: rgb(153, 153, 153);
+    margin-bottom: 10px;
+    margin-top: 40px;
 }
 
 .footer-left {
@@ -210,7 +244,7 @@ footer {
     align-items: left;
     flex-direction: column;
 
-    font-family: 'medium', sans-serif;
+    font-family: 'obviously-wide';
     font-size: 12px;
     color: rgb(153, 153, 153);
 
@@ -218,6 +252,8 @@ footer {
 
 .adresse-footer {
     margin-bottom: -5px;
+    font-size: 14px;
+    color: rgb(153, 153, 153);
 }
 
 
@@ -229,7 +265,6 @@ footer {
     justify-content: right;
     margin-top: 25px;
 
-    
 }
 
 .footer-spalteone {
@@ -242,9 +277,9 @@ footer {
 }
 
 .footer-right a {
-    font-family: 'medium', sans-serif;
+    font-family: 'obviously-wide';
     display: block;
-    font-size: 12px;
+    font-size: 14px;
     margin-bottom: 10px;
     color: rgb(153, 153, 153);
     text-decoration: none;
@@ -260,7 +295,7 @@ footer {
 }
 
 .icons-footer {
-    grid-column: 2 / span 1;
+    grid-column: 2 / span 2;
     grid-row: 2 / span 1;
     align-self: center;
     color: rgb(153, 153, 153);
@@ -269,7 +304,7 @@ footer {
 hr {
     grid-column: 2 / span 2;
     grid-row: 2 / span 1;
-    margin-top: 60px;
+    margin-top: 40px;
     border: 1px solid rgb(153, 153, 153);
     width: 100%;
     height: 0px;
@@ -278,18 +313,18 @@ hr {
 
 .social-icon {
     height: 40px;
-    margin-top: 100px;
     margin-right: 10%;
+    margin-top: 45px;
     color: rgb(153, 153, 153);
 }
 
-@media only screen and (min-width: 769px) and (max-width: 1024px){
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
 
     footer {
         display: grid;
         grid-template-columns: 40px 1fr 1fr 40px;
-        grid-template-rows: 1fr 1fr;
-        padding: 20px;
+        grid-template-rows: 1fr 150px;
+        padding: 0px;
         background: rgba(21, 6, 40, 0.6);
         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
         backdrop-filter: blur(4.4px);
@@ -299,11 +334,11 @@ hr {
 
     .footer-spalteone {
         margin-right: 20%;
-    
+
     }
 }
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 768px) {
 
     footer {
         display: grid;
@@ -320,7 +355,7 @@ hr {
     .footer-spalteone {
         margin-right: 0%;
         margin-bottom: -10px;
-    
+
     }
 
     .footer-right {
@@ -329,11 +364,11 @@ hr {
         display: flex;
         justify-content: right;
         flex-direction: column;
-        margin-top: 25px;
+        margin-top: 0px;
         text-align: right;
         margin-right: 10%;
-    
-        
+
+
     }
 
     hr {
@@ -346,9 +381,9 @@ hr {
     }
 
     .social-icon {
-        height: 7vw;
-        margin-top: 10px;
-        margin-right: 10%;
+        height: 40px;
+        margin-top: 20px;
+        margin-right: 16%;
         color: rgb(153, 153, 153);
     }
 
