@@ -340,6 +340,7 @@ footer {
     color: rgb(153, 153, 153);
 }
 
+
 hr {
     grid-column: 2 / span 2;
     grid-row: 2 / span 1;
@@ -351,7 +352,7 @@ hr {
 
 
 .social-icon {
-    height: 40px;
+    height: 90px;
     margin-right: 10%;
     margin-top: 45px;
     color: rgb(153, 153, 153);
@@ -419,10 +420,17 @@ hr {
         height: 0px;
     }
 
+    .icons-footer {
+        grid-column: 2 / span 2;
+        grid-row: 2 / span 1;
+        align-self: center;
+        color: rgb(153, 153, 153);
+    }
+
     .social-icon {
-        height: 40px;
+        height: 80px;
         margin-top: 20px;
-        margin-right: 16%;
+        margin-right: 0%;
         color: rgb(153, 153, 153);
     }
 
