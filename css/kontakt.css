@@ -159,6 +159,8 @@ footer {
     }
 }
 
+
+/*Tablet*/
 @media screen and (max-width: 1000px) {
     h1 {
         font-size: 6vw;
@@ -168,36 +170,47 @@ footer {
         font-size: 2vw;
     }
 
+    .text {
+        grid-area: 2 / 2 / span 3 / span 6;
+    }
+
+    .formular {
+        grid-area: 6 / 2 / span 7 / span 12;
+    }
+    form {
+        max-width: 100%;
+    }
     p {
         font-size: 1.5vw;
     }
 
-    footer {
-        p{
-            font-size: 10px;
-        }
+}
+
+
+/*Handy*/
+@media screen and (max-width: 657px) {     
+    
+    .text {
+        grid-area: 2 / 2 / span 2 / span 6;
     }
 
+    .formular {
+        grid-area: 5 / 2 / span 7 / span 12;
+    }
+    form {
+        max-width: 100%;
+    }
 
-@media screen and (max-widt: 657px) {     
-    
     h1 {
-        font-size: 9vw;
+        font-size: 4vw
     }
-    
+
     h2 {
-        font-size: 4vw;
+        font-size: 2.5vw;
     }
 
     p {
-        font-size: 3vw;
+        font-size: 1.7vw;
     }
-
-    footer {
-        p{
-            font-size: 10px;
-        } 
-    }
-
 } 
 

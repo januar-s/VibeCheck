@@ -18,12 +18,13 @@ main {
     width: 100%;
     display: grid;
     grid-template-columns: 40px repeat(12, 1fr) 40px;
-    grid-template-rows: repeat(34, 100px);
+    grid-template-rows: repeat(12, 100px);
 
 }
 
 #usgangsgschichte {
-    grid-area: 2 / 3 / span 8 / span 9;
+    grid-area: 2 / 2 / span 8 / span 12;
+    text-align: justify;
 }
 
 h1 {
@@ -68,8 +69,65 @@ p {
 
 footer {
     grid-column: 1 / span 14;
-    grid-row: 26 / span 4;
+    grid-row: 10 / span 4;
     p{
         font-size: 13px;
     }
 }
+
+
+
+
+/*Tablet*/
+@media screen and (max-width: 1000px) {
+    main {
+        grid-template-rows: repeat(12, 100px);
+    }
+    
+    h1 {
+        font-size: 6vw;
+    }
+
+    h2 {
+        font-size: 2vw;
+    }
+
+    p {
+        font-size: 1.5vw;
+    }
+
+    #usgangsgschichte {
+        grid-area: 2 / 2 / span 8 / span 12;
+        text-align: justify;
+    }
+
+    footer {
+        grid-row: 9 / span 4;
+    }
+
+}
+
+
+/*Handy*/
+@media screen and (max-width: 657px) {    
+    main {
+        grid-template-rows: repeat(11, 100px);
+    } 
+
+    h1 {
+        font-size: 4vw
+    }
+
+    h2 {
+        font-size: 2.5vw;
+    }
+
+    p {
+        font-size: 1.7vw;
+    }
+
+    footer {
+        grid-row: 8 / span 4;
+    }
+
+} 

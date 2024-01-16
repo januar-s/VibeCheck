@@ -17,7 +17,7 @@ main {
     width: 100%;
     display: grid;
     grid-template-columns: 40px repeat(12, 1fr) 40px;
-    grid-template-rows: repeat(34, 100px);
+    grid-template-rows: repeat(32, 100px);
 
 }
 
@@ -51,24 +51,34 @@ p {
 }
 
 #impressum {
-    grid-area: 2 / 3 / span 8 / span 9;
+    grid-area: 2 / 2 / span 8 / span 11;
+    text-align: justify;
 }
 
 #Datenschutz {
-    grid-area: 13 / 3 / span 9 / span 9;
+    grid-area: 11 / 2 / span 9 / span 11;
+    text-align: justify;
 }
 
 #Fragen {
-    grid-area: 28 / 3 / span 2 / span 9;
+    grid-area: 26 / 2 / span 2 / span 10;
+    text-align: justify;
 }
 
 footer {
     grid-column: 1 / span 14;
-    grid-row: 31 / span 4;
+    grid-row: 29 / span 4;
 
 }
 
+
+
+/*Tablet*/
 @media screen and (max-width: 1000px) {
+    main{
+        grid-template-rows: repeat(32, 100px);
+    }
+    
     h1 {
         font-size: 6vw;
     }
@@ -81,15 +91,35 @@ footer {
         font-size: 1.5vw;
     }
 
+    #impressum {
+        grid-area: 2 / 2 / span 8 / span 12;
+    }
+    
+    #Datenschutz {
+        grid-area: 12 / 2 / span 9 / span 12;
+    }
+    
+    #Fragen {
+        grid-area: 26 / 2 / span 2 / span 12;
+    }
+
+    footer {
+        grid-column: 1 / span 14;
+        grid-row: 29 / span 4;
+    }
 }
 
+/*/Handy*/
 @media screen and (max-width: 657px) {
     body {
-        grid-template-columns: 15px repeat(12, 1fr) 15px;
-        grid-template-rows: repeat(30, 100px);
         background-image: url(/images/HintergrundHandy.png);
         background-position: center;
         background-size: 100% auto;
+    }
+
+    main{
+        grid-template-columns: 15px repeat(12, 1fr) 15px;
+        grid-template-rows: repeat(28, 100px);
     }
 
     h1 {
@@ -101,19 +131,26 @@ footer {
     }
 
     p {
-        font-size: 2vw;
+        font-size: 1.7vw;
     }
 
     #impressum {
-        grid-area: 2 / 2 / span 8 / span 11;
+        grid-area: 2 / 2 / span 8 / span 12;
+        text-align: justify;
     }
 
     #Datenschutz {
-        grid-area: 12 / 2 / span 9 / span 11;
+        grid-area: 11 / 2 / span 9 / span 12;
+        text-align: justify;
     }
 
     #Fragen {
-        grid-area: 25 / 2 / span 2 / span 11;
+        grid-area: 23 / 2 / span 2 / span 12;
+        text-align: justify;
+    }
+
+    footer {
+        grid-row: 26 / span 4;
     }
 
 }
