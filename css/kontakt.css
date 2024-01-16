@@ -88,7 +88,7 @@ button {
     background-color: white;
     border: 1px solid rgba(255, 255, 255, 0.3);
     font-family: 'obviously-wide';
-    width: 15vw;
+    width: auto;
     height: auto;
 }
 
@@ -159,4 +159,45 @@ footer {
     }
 }
 
+@media screen and (max-width: 1000px) {
+    h1 {
+        font-size: 6vw;
+    }
+
+    h2 {
+        font-size: 2vw;
+    }
+
+    p {
+        font-size: 1.5vw;
+    }
+
+    footer {
+        p{
+            font-size: 10px;
+        }
+    }
+
+
+@media screen and (max-widt: 657px) {     
+    
+    h1 {
+        font-size: 9vw;
+    }
+    
+    h2 {
+        font-size: 4vw;
+    }
+
+    p {
+        font-size: 3vw;
+    }
+
+    footer {
+        p{
+            font-size: 10px;
+        } 
+    }
+
+} 
 
