@@ -72,7 +72,38 @@ footer {
     }
 }
 
-@media screen and (max-width: 1000px) {}
+@media screen and (max-width: 1000px) {
+    p {
+        font-size: 11px;
+        padding: 0px;
+    }
+
+    h3 {
+        font-size: 3vw;
+    }
+
+    h4 {
+        font-size: 1.5vw;
+    }
 
 
-@media screen and (max-width: 657px) {}
+}
+
+
+@media screen and (max-width: 657px) {
+    body {
+        background-image: url(/images/HintergrundHandy.png);
+        background-position: center;
+        background-size: 100% auto;
+    }
+
+    main {
+        grid-template-columns: 15px repeat(12, 1fr) 15px;
+        grid-template-rows: repeat(34, 100px);
+    }
+
+    footer {
+        grid-row: 31 / span 4;
+    }
+
+}
