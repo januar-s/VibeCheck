@@ -23,12 +23,12 @@ main {
 }
 
 a {
-    color: rgb(200, 95, 130)
+    color: rgb(242, 27, 127)
 }
 
 
 #usgangsgschichte {
-    grid-area: 2 / 2 / span 8 / span 12;
+    grid-area: 2 / 3 / span 7 / span 9;
     text-align: justify;
 }
 
@@ -48,6 +48,7 @@ h2 {
     margin: 0px;
     margin-bottom: -10px;
     color: white;
+    margin-top: 5vw;
 }
 
 p {
@@ -72,6 +73,13 @@ p {
     justify-content: center;
 }
 
+.podcast-icon {
+    height: 10vw;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+}
+
 footer {
     grid-column: 1 / span 14;
     grid-row: 10 / span 4;
@@ -82,9 +90,9 @@ footer {
 
 
 /*Tablet*/
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
+@media only screen and (max-width: 1024px) {
     main {
-        grid-template-rows: repeat(12, 100px);
+        grid-template-rows: repeat(13, 100px);
     }
     
     h1 {
@@ -93,19 +101,15 @@ footer {
 
     h2 {
         font-size: 2vw;
+        margin-top: 7.5vw;
     }
 
     p {
         font-size: 1.5vw;
     }
 
-    #usgangsgschichte {
-        grid-area: 2 / 2 / span 8 / span 12;
-        text-align: justify;
-    }
-
     footer {
-        grid-row: 9 / span 4;
+        grid-row: 10 / span 4;
     }
 
 }
@@ -114,19 +118,15 @@ footer {
 /*Handy*/
 @media screen and (max-width: 768px) {    
     main {
-        grid-template-rows: repeat(10, 100px);
+        grid-template-rows: repeat(7, 100px);
     } 
 
-    h1 {
-        font-size: 4vw
+    #usgangsgschichte {
+        grid-area: 2 / 2 / span 8 / span 12;
     }
 
-    h2 {
-        font-size: 2vw;
-    }
-
-    p {
-        font-size: 1.5vw;
+    .podcast-icon {
+        height: 10vw;
     }
 
     footer {
