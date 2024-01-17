@@ -40,23 +40,7 @@ input {
     background: rgba(255, 255, 255, 0.2);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
     border: 1px solid rgba(255, 255, 255, 0.3);
-
-    color: white;
-    font-family: 'obviously-wide';
-    font-size: 0.8vw;
-}
-
-textarea {
-    border-radius: 20px;
-    height: 200px;
-    background: rgba(255, 255, 255, 0.2);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    resize: none;
 
     color: white;
     font-family: 'obviously-wide';
@@ -68,7 +52,6 @@ select {
     background: rgba(255, 255, 255, 0.2);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
     border: 1px solid rgba(255, 255, 255, 0.3);
     
     color: white;
@@ -76,6 +59,21 @@ select {
     font-size: 0.8vw;
     margin-left: 0;
 }
+
+textarea {
+    border-radius: 20px;
+    height: 200px;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    resize: none;
+
+    color: white;
+    font-family: 'obviously-wide';
+    font-size: 0.8vw;
+}
+
 
 option {
     border-radius: 20px;
@@ -91,8 +89,6 @@ button {
     width: auto;
     height: auto;
 }
-
-
 
 label {
     display: block;
@@ -120,7 +116,6 @@ select {
     border-radius: 20px;
     display: none;
 }
-
 
 h1 {
     font-family: 'cheee-wowie', sans-serif;
@@ -154,9 +149,6 @@ p {
 footer {
     grid-column: 1 / span 14;
     grid-row: 15 / span 4;
-    p{
-        font-size: 13px;
-    }
 }
 
 
