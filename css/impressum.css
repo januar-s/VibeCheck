@@ -76,7 +76,7 @@ footer {
 
 
 /*Tablet*/
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
     main{
         grid-template-rows: repeat(31, 100px);
     }
@@ -120,11 +120,11 @@ footer {
 
     main{
         grid-template-columns: 15px repeat(12, 1fr) 15px;
-        grid-template-rows: repeat(28, 100px);
+        grid-template-rows: repeat(33, 100px);
     }
 
     h1 {
-        font-size: 4vw
+        font-size: 6vw;
     }
 
     h2 {
@@ -132,7 +132,7 @@ footer {
     }
 
     p {
-        font-size: 1.7vw;
+        font-size: 2vw;
     }
 
     #impressum {
@@ -141,17 +141,17 @@ footer {
     }
 
     #Datenschutz {
-        grid-area: 11 / 2 / span 9 / span 12;
+        grid-area: 13 / 2 / span 9 / span 12;
         text-align: justify;
     }
 
     #Fragen {
-        grid-area: 23 / 2 / span 2 / span 12;
+        grid-area: 27 / 2 / span 2 / span 12;
         text-align: justify;
     }
 
     footer {
-        grid-row: 26 / span 4;
+        grid-row: 30 / span 4;
     }
 
 }
