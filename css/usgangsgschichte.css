@@ -82,7 +82,7 @@ footer {
 
 
 /*Tablet*/
-@media screen and (max-width: 1000px) {
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
     main {
         grid-template-rows: repeat(12, 100px);
     }
@@ -112,9 +112,9 @@ footer {
 
 
 /*Handy*/
-@media screen and (max-width: 657px) {    
+@media screen and (max-width: 768px) {    
     main {
-        grid-template-rows: repeat(11, 100px);
+        grid-template-rows: repeat(10, 100px);
     } 
 
     h1 {
@@ -122,11 +122,11 @@ footer {
     }
 
     h2 {
-        font-size: 2.5vw;
+        font-size: 2vw;
     }
 
     p {
-        font-size: 1.7vw;
+        font-size: 1.5vw;
     }
 
     footer {
