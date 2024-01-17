@@ -302,7 +302,6 @@ input[type="checkbox" i] {
     align-items: flex-start;
     margin-right: 0px;
     margin-top: 0px;
-    /* Sorry, this is an ugly hack */
 
     writing-mode: vertical-rl;
     transform: rotate(180deg);
