@@ -75,9 +75,7 @@ p {
 footer {
     grid-column: 1 / span 14;
     grid-row: 10 / span 4;
-    p{
-        font-size: 13px;
-    }
+    
 }
 
 
