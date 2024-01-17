@@ -32,7 +32,6 @@ p{
     margin: 0px;
     padding: 0;
     text-align: center;
-    text-justify: start;
     font-size: 110px;
     
     color: white;
@@ -358,7 +357,7 @@ summary{
 
 
 /*Tablets*/
-@media only screen and (min-width: 769px) and (max-width: 1024px){
+@media screen and (max-width: 1024px){
     
     .titel{
         grid-column: 3 / span 10;
@@ -384,7 +383,10 @@ summary{
     }
     
     .textli{
-        font-size: 10.5px;
+        font-size: 12px;
+    }
+    p{
+        font-size: 15px;
     }
 
 
