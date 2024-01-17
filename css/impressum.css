@@ -50,6 +50,8 @@ p {
     color: white;
 }
 
+
+
 #impressum {
     grid-area: 2 / 2 / span 8 / span 11;
     text-align: justify;
