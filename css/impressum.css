@@ -76,9 +76,9 @@ footer {
 
 
 /*Tablet*/
-@media screen and (max-width: 1000px) {
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
     main{
-        grid-template-rows: repeat(32, 100px);
+        grid-template-rows: repeat(31, 100px);
     }
     
     h1 {
@@ -102,17 +102,16 @@ footer {
     }
     
     #Fragen {
-        grid-area: 26 / 2 / span 2 / span 12;
+        grid-area: 25 / 2 / span 2 / span 12;
     }
 
     footer {
-        grid-column: 1 / span 14;
-        grid-row: 29 / span 4;
+        grid-row: 28 / span 4;
     }
 }
 
 /*/Handy*/
-@media screen and (max-width: 657px) {
+@media screen and (max-width: 768px) {
     body {
         background-image: url(/images/HintergrundHandy.png);
         background-position: center;
